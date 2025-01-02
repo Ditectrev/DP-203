@@ -537,48 +537,48 @@
 
 ![Question 115](images/question115.jpg)
 
-- [x] Box 1: Zone-redundant storage (ZRS). Box 2: Failover manually initiated by the customer. 
-- [ ] Box 1: Failover manually initiated by the customer. Box 2: Failover manually initiated by the customer. 
-- [ ] Box 1: Failover manually initiated by the customer. Box 2: Zone-redundant storage (ZRS). 
-- [ ] Box 1: Zone-redundant storage (ZRS). Box 2: Zone-redundant storage (ZRS). 
+- [x] Box 1: Zone-redundant storage (ZRS). Box 2: Failover manually initiated by the customer.
+- [ ] Box 1: Failover manually initiated by the customer. Box 2: Failover manually initiated by the customer.
+- [ ] Box 1: Failover manually initiated by the customer. Box 2: Zone-redundant storage (ZRS).
+- [ ] Box 1: Zone-redundant storage (ZRS). Box 2: Zone-redundant storage (ZRS).
 
 ### HOTSPOT You plan to develop a dataset named Purchases by using Azure databricks Purchases will contain the following columns: • ProductID • ItemPrice • lineTotal • Quantity • StorelD • Minute • Month • Hour • Year • Day You need to store the data to support hourly incremental load pipelines that will vary for each StoreID. the solution must minimize storage costs . How should you complete the rode?
 
 ![Question 116](images/question116.jpg)
 
-- [ ] Box 1:  parquet (*/Purchases")!. Box 2: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 3: • parquet (*/Purchases")!. 
-- [ ] Box 1:  parquet (*/Purchases")!. Box 2: partitionBy. Box 3: partitionBy. 
-- [ ] Box 1: partitionBy. Box 2: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 3:  parquet (*/Purchases"). 
-- [ ] Box 1: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 2: • parquet (*/Purchases")!. Box 3: partitionBy. 
+- [ ] Box 1:  parquet (*/Purchases")!. Box 2: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 3: • parquet (*/Purchases")!.
+- [ ] Box 1:  parquet (*/Purchases")!. Box 2: partitionBy. Box 3: partitionBy.
+- [ ] Box 1: partitionBy. Box 2: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 3:  parquet (*/Purchases").
+- [ ] Box 1: ("StoreID", , "Year", "Month", "Day", "Hour") . Box 2: • parquet (*/Purchases")!. Box 3: partitionBy.
 
 ### Solution: In an Azure Synapse Analytics pipeline, you use a data flow that contains a Derived Column transformation.
 
 - [x] Yes
-- [ ] No 
+- [ ] No
 
 ### CORRECT TEXT You are designing an Azure Data Lake Storage Gen2 container to store data for the human resources (HR) department and the operations department at your company. You have the following data access requirements: • After initial processing, the HR department data will be retained for seven years. • The operations department data will be accessed frequently for the first six months, and then accessed once per month. You need to design a data retention solution to meet the access requirements. The solution must minimize storage costs.
 
 ![Question 117](images/question117.jpg)
 
-- [x] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Cool storage after 180 days. 
-- [ ] Box 1: Cool storage after 180 days. Box 2: Archive storage after one day and delete storage after 2,555 days. 
-- [ ] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Archive storage after one day and delete storage after 2,555 days. 
-- [ ] Box 1: Cool storage after 180 days. Box 2: Cool storage after 180 days. 
+- [x] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Cool storage after 180 days.
+- [ ] Box 1: Cool storage after 180 days. Box 2: Archive storage after one day and delete storage after 2,555 days.
+- [ ] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Archive storage after one day and delete storage after 2,555 days.
+- [ ] Box 1: Cool storage after 180 days. Box 2: Cool storage after 180 days.
 
 ### HOTSPOT You are designing an application that will store petabytes of medical imaging data When the data is first created, the data will be accessed frequently during the first week. After one month, the data must be accessible within 30 seconds, but files will be accessed infrequently. After one year, the data will be accessed infrequently but must be accessible within five minutes. You need to select a storage strategy for the data. The solution must minimize costs. Which storage tier should you use for each time frame?
 
 ![Question 118](images/question118.jpg)
 
-- [ ] Box 1: Hot. Box 2: Cool. Box 3: Cool. 
-- [ ] Box 1: Archive. Box 2: Archive. Box 3: Archive. 
-- [ ] Box 1: Hot. Box 2: Hot. Box 3: Archive. 
-- [ ] Box 1: Cool. Box 2: Archive. Box 3: Hot. 
+- [ ] Box 1: Hot. Box 2: Cool. Box 3: Cool.
+- [ ] Box 1: Archive. Box 2: Archive. Box 3: Archive.
+- [ ] Box 1: Hot. Box 2: Hot. Box 3: Archive.
+- [ ] Box 1: Cool. Box 2: Archive. Box 3: Hot.
 
 ### You are designing a sales transactions table in an Azure Synapse Analytics dedicated SQL pool. The table will contains approximately 60 million rows per month and will be partitioned by month. The table will use a clustered column store index and round-robin distribution. Approximately how many rows will there be for each combination of distribution and partition?
 
 - [ ] 1 million
 - [ ] 5 million
-- [ ] 20 million 
+- [ ] 20 million
 - [x] 60 million
 
 ### You implement an enterprise data warehouse in Azure Synapse Analytics. You have a large fact table that is 10 terabytes (TB) in size. Incoming queries use the primary key SaleKey column to retrieve data as displayed in the following table: You need to distribute the large fact table across multiple nodes to optimize performance of the table. Which technology should you use?
@@ -593,15 +593,15 @@
 
 ![Question 119](images/question119.jpg)
 
-- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Partition option to Dynamic range. 
-- [x] Box 1: Set the Copy method to PolyBase. Box 2: Set the Copy method to Bulk insert. 
-- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Copy method to PolyBase. 
-- [ ] Box 1: Set the Partition option to Dynamic range. Box 2: Set the Copy method to PolyBase. 
+- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Partition option to Dynamic range.
+- [x] Box 1: Set the Copy method to PolyBase. Box 2: Set the Copy method to Bulk insert.
+- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Copy method to PolyBase.
+- [ ] Box 1: Set the Partition option to Dynamic range. Box 2: Set the Copy method to PolyBase.
 
 ### Solution: You copy the files to a table that has a columnstore index.
 
-- [ ] Yes 
-- [x] No 
+- [ ] Yes
+- [x] No
 
 ### You have an Azure Data Factory pipeline that performs an incremental load of source data to an Azure Data Lake Storage Gen2 account. Data to be loaded is identified by a column named LastUpdatedDate in the source table. You plan to execute the pipeline every four hours. You need to ensure that the pipeline execution meets the following requirements: ✑ Automatically retries the execution when the pipeline run fails due to concurrency or throttling limits. ✑ Supports backfilling existing data in the table. Which type of trigger should you use?
 
@@ -621,10 +621,10 @@
 
 ![Question 120](images/question120.jpg)
 
-- [ ] Box 1: Delete the blob. Box 2: Move to cool storage. 
-- [ ] Box 1: Delete the blob. Box 2: Move to cool storage. 
-- [x] Box 1: Move to cool storage. Box 2: Move to archive storage. 
-- [ ] Box 1: Delete the blob. Box 2: Move to archive storage. 
+- [ ] Box 1: Delete the blob. Box 2: Move to cool storage.
+- [ ] Box 1: Delete the blob. Box 2: Move to cool storage.
+- [x] Box 1: Move to cool storage. Box 2: Move to archive storage.
+- [ ] Box 1: Delete the blob. Box 2: Move to archive storage.
 
 ### ou have an Azure Stream Analytics query. The query returns a result set that contains 10,000 distinct values for a column named clusterID. You monitor the Stream Analytics job and discover high latency. You need to reduce the latency. Which two actions should you perform? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.
 
@@ -645,10 +645,10 @@
 
 ![Question 121](images/question121.jpg)
 
-- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE PARTITION FUNCTION. 
-- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE SECURITY POLICY. 
-- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE SECURITY POLICY. 
-- [x] Box 1: GRANT. Box 2: CREATE SECURITY POLICY. 
+- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE PARTITION FUNCTION.
+- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE SECURITY POLICY.
+- [ ] Box 1: CREATE SECURITY POLICY. Box 2: CREATE SECURITY POLICY.
+- [x] Box 1: GRANT. Box 2: CREATE SECURITY POLICY.
 
 ### You have an Azure Synapse Analytics dedicated SQL pool named SA1 that contains a table named Table1. You need to identify tables that have a high percentage of deleted rows. What should you run?
 
@@ -660,16 +660,16 @@
 ### Solution: You use a hopping window that uses a hop size of 10 seconds and a window size of 10 seconds. Does this meet the goal?
 
 - [ ] Yes
-- [x] No 
+- [x] No
 
 ### DRAG DROP You have data stored in thousands of CSV files in Azure Data Lake Storage Gen2. Each file has a header row followed by a properly formatted carriage return (/r) and line feed (/n). You are implementing a pattern that batch loads the files daily into an enterprise data warehouse in Azure Synapse Analytics by using PolyBase. You need to skip the header row when you import the files into the data warehouse. Before building the loading pattern, you need to prepare the required database objects in Azure Synapse Analytics. Which three actions should you perform in sequence?
 
 ![Question 122](images/question122.jpg)
 
-- [ ] Box 1: Create an external data source that uses the abfs location. Box 2: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 3: Create an external file format and set the Firat_Row option. 
-- [x] Box 1: Create an external data source that uses the abfs location. Box 2: Create an external file format and set the Firat_Row option. Box 3: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. 
-- [ ] Box 1: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 2: Create an external data source that uses the abfs location. Box 3: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. 
-- [ ] Box 1: Create an external file format and set the Firat_Row option. Box 2: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 3: Create an external data source that uses the abfs location. 
+- [ ] Box 1: Create an external data source that uses the abfs location. Box 2: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 3: Create an external file format and set the Firat_Row option.
+- [x] Box 1: Create an external data source that uses the abfs location. Box 2: Create an external file format and set the Firat_Row option. Box 3: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages.
+- [ ] Box 1: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 2: Create an external data source that uses the abfs location. Box 3: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages.
+- [ ] Box 1: Create an external file format and set the Firat_Row option. Box 2: Use CREATE EXTERNAL TABLE AS SELECT (CETAS) and configure the reject options to specify reject values or percentages. Box 3: Create an external data source that uses the abfs location.
 
 ### You have a SQL pool in Azure Synapse that contains a table named dbo.Customers. The table contains a column name Email. You need to prevent nonadministrative users from seeing the full email addresses in the Email column. The users must see values in a format of aXXX@XXXX.com instead. What should you do?
 
@@ -681,7 +681,7 @@
 ### Solution: You use an Azure Data Factory schedule trigger to execute a pipeline that executes mapping data Flow, and then inserts the data info the data warehouse.
 
 - [ ] Yes
-- [x] No 
+- [x] No
 
 ### CORRECT TEXT You are designing an application that will use an Azure Data Lake Storage Gen 2 account to store petabytes of license plate photos from toll booths. The account will use zone-redundant storage (ZRS). You identify the following usage patterns: • The data will be accessed several times a day during the first 30 days after the data is created. The data must meet an availability SU of 99.9%. • After 90 days, the data will be accessed infrequently but must be available within 30 seconds. • After 365 days, the data will be accessed infrequently but must be available within five minutes.
 
@@ -705,19 +705,19 @@
 
 ![Question 124](images/question124.jpg)
 
-- [x] Box 1: Denormalizing to a second normal form. Box 2: New IDENTITY columns. 
-- [ ] Box 1: New IDENTITY columns. Box 2: Denormalizing to a second normal form. 
-- [ ] Box 1: Maintaining to a third normal form. Box 2: Denormalizing to a second normal form. 
-- [ ] Box 1: Maintaining to a third normal form. Box 2: New IDENTITY columns. 
+- [x] Box 1: Denormalizing to a second normal form. Box 2: New IDENTITY columns.
+- [ ] Box 1: New IDENTITY columns. Box 2: Denormalizing to a second normal form.
+- [ ] Box 1: Maintaining to a third normal form. Box 2: Denormalizing to a second normal form.
+- [ ] Box 1: Maintaining to a third normal form. Box 2: New IDENTITY columns.
 
 ### HOTSPOT You have an Azure subscription that contains an Azure Data Lake Storage account. The storage account contains a data lake named DataLake1. You plan to use an Azure data factory to ingest data from a folder in DataLake1, transform the data, and land the data in another folder. You need to ensure that the data factory can read and write data from any folder in the DataLake1 file system. The solution must meet the following requirements: ✑ Minimize the risk of unauthorized user access. ✑ Use the principle of least privilege. ✑ Minimize maintenance effort. How should you configure access to the storage account for the data factory?
 
 ![Question 125](images/question125.jpg)
 
-- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD). 
-- [ ] Box 1: Azure Active Directory (Azure AD). Box 2: a managed identity. 
-- [ ] Box 1: a shared key. Box 2: a shared key. 
-- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD). 
+- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD).
+- [ ] Box 1: Azure Active Directory (Azure AD). Box 2: a managed identity.
+- [ ] Box 1: a shared key. Box 2: a shared key.
+- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD).
 
 ### You have an Azure data solution that contains an enterprise data warehouse in Azure Synapse Analytics named DW1. Several users execute ad hoc queries to DW1 concurrently. You regularly perform automated data loads to DW1. You need to ensure that the automated data loads have enough memory available to complete quickly and successfully when the adhoc queries run. What should you do?
 
@@ -744,19 +744,19 @@
 
 ![Question 126](images/question126.jpg)
 
-- [ ] Box 1: WHERE EventTvoe='HeartBeat'. Box 2: SessionWindow(second, 5, 50000) OVER (PARTITION BY DevicelD). 
-- [ ] Box 1: TumblingWindow(second,5). Box 2: WHERE EventTvoe='HeartBeat'. 
-- [x] Box 1: WHERE EventTvoe='HeartBeat'. Box 2: TumblingWindow(second,5). 
-- [ ] Box 1: SessionWindow(second, 5, 50000) OVER (PARTITION BY DevicelD). Box 2: TumblingWindow(second,5). 
+- [ ] Box 1: WHERE EventTvoe='HeartBeat'. Box 2: SessionWindow(second, 5, 50000) OVER (PARTITION BY DevicelD).
+- [ ] Box 1: TumblingWindow(second,5). Box 2: WHERE EventTvoe='HeartBeat'.
+- [x] Box 1: WHERE EventTvoe='HeartBeat'. Box 2: TumblingWindow(second,5).
+- [ ] Box 1: SessionWindow(second, 5, 50000) OVER (PARTITION BY DevicelD). Box 2: TumblingWindow(second,5).
 
 ### HOTSPOT You are designing an Azure Stream Analytics solution that receives instant messaging data from an Azure Event Hub. You need to ensure that the output from the Stream Analytics job counts the number of messages per time zone every 15 seconds. How should you complete the Stream Analytics query?
 
 ![Question 127](images/question127.jpg)
 
-- [ ] Box 1: LAST. Box 2: SYSTEM.TIMESTAMP(). 
-- [ ] Box 1: LAST. Box 2: TIMESTAMP BY. 
-- [ ] Box 1: SYSTEM.TIMESTAMP(). Box 2: LAST. 
-- [x] Box 1: TIMESTAMP BY. Box 2: TUMBLINGWINDOW. 
+- [ ] Box 1: LAST. Box 2: SYSTEM.TIMESTAMP().
+- [ ] Box 1: LAST. Box 2: TIMESTAMP BY.
+- [ ] Box 1: SYSTEM.TIMESTAMP(). Box 2: LAST.
+- [x] Box 1: TIMESTAMP BY. Box 2: TUMBLINGWINDOW.
 
 ### You have an Azure Databricks workspace named workspace! in the Standard pricing tier. Workspace! contains an all-purpose cluster named cluster). You need to reduce the time it takes for cluster 1 to start and scale up. The solution must minimize costs. What should you do first?
 
@@ -769,28 +769,28 @@
 
 ![Question 128](images/question128.jpg)
 
-- [ ] Box 1: Read the file into a data frame. Box 2: Perform transformations on the file. Box 3: Specify a temporary folder to stage the dat. Box 4: Write the results to Data Lake Storage. Box 5: Drop the data frame. 
-- [ ] Box 1: Read the file into a data frame. Box 2: Specify a temporary folder to stage the dat. Box 3: Write the results to Data Lake Storage. Box 4: Drop the data frame. Box 5: Perform transformations on the file. 
-- [ ] Box 1: Perform transformations on the file. Box 2: Drop the data frame. Box 3: Read the file into a data frame. Box 4: Write the results to Data Lake Storage. Box 5: Drop the data frame. 
-- [ ] Box 1: Specify a temporary folder to stage the dat. Box 2: Read the file into a data frame. Box 3: Read the file into a data frame. Box 4: Drop the data frame. Box 5: Perform transformations on the file. 
+- [ ] Box 1: Read the file into a data frame. Box 2: Perform transformations on the file. Box 3: Specify a temporary folder to stage the dat. Box 4: Write the results to Data Lake Storage. Box 5: Drop the data frame.
+- [ ] Box 1: Read the file into a data frame. Box 2: Specify a temporary folder to stage the dat. Box 3: Write the results to Data Lake Storage. Box 4: Drop the data frame. Box 5: Perform transformations on the file.
+- [ ] Box 1: Perform transformations on the file. Box 2: Drop the data frame. Box 3: Read the file into a data frame. Box 4: Write the results to Data Lake Storage. Box 5: Drop the data frame.
+- [ ] Box 1: Specify a temporary folder to stage the dat. Box 2: Read the file into a data frame. Box 3: Read the file into a data frame. Box 4: Drop the data frame. Box 5: Perform transformations on the file.
 
 ### HOTSPOT You have an Azure event hub named retailhub that has 16 partitions. Transactions are posted to retailhub. Each transaction includes the transaction ID, the individual line items, and the payment details. The transaction ID is used as the partition key. You are designing an Azure Stream Analytics job to identify potentially fraudulent transactions at a retail store. The job will use retailhub as the input. The job will output the transaction ID, the individual line items, the payment details, a fraud score, and a fraud indicator. You plan to send the output to an Azure event hub named fraudhub. You need to ensure that the fraud detection solution is highly scalable and processes transactions as quickly as possible. How should you structure the output of the Stream Analytics job?
 
 ![Question 129](images/question129.jpg)
 
-- [ ] Box 1: Transaction ID. Box 2: Transaction ID. 
-- [ ] Box 1: 1. Box 2: 16. 
-- [ ] Box 1: 8. Box 2: 1. 
-- [x] Box 1: 16. Box 2: Transaction ID. 
+- [ ] Box 1: Transaction ID. Box 2: Transaction ID.
+- [ ] Box 1: 1. Box 2: 16.
+- [ ] Box 1: 8. Box 2: 1.
+- [x] Box 1: 16. Box 2: Transaction ID.
 
 ### HOTSPOT You have an Azure Storage account that generates 200,000 new files daily. The file names have a format of {YYYY}/{MM}/{DD}/{HH}/{CustomerID}.csv. You need to design an Azure Data Factory solution that will load new data from the storage account to an Azure Data Lake once hourly. The solution must minimize load times and costs. How should you configure the solution?
 
 ![Question 130](images/question130.jpg)
 
-- [x] Box 1: Incremental Load. Box 2: Tumbling window. 
-- [ ] Box 1: Full Load. Box 2: Tumbling window. 
-- [ ] Box 1: Incremental Load. Box 2: Incremental Load. 
-- [ ] Box 1: Full Load. Box 2: Tumbling window. 
+- [x] Box 1: Incremental Load. Box 2: Tumbling window.
+- [ ] Box 1: Full Load. Box 2: Tumbling window.
+- [ ] Box 1: Incremental Load. Box 2: Incremental Load.
+- [ ] Box 1: Full Load. Box 2: Tumbling window.
 
 ### You plan to implement an Azure Data Lake Storage Gen2 container that will contain CSV files. The size of the files will vary based on the number of events that occur per hour. File sizes range from 4.KB to 5 GB. You need to ensure that the files stored in the container are optimized for batch processing. What should you do?
 
@@ -803,43 +803,43 @@
 
 ![Question 131](images/question131.jpg)
 
-- [x] Box 1: Azure Data Lake Store. Box 2: HDinsight Spark. Box 3: Azure SOL Data Warehouse. 
-- [ ] Box 1: HDinsight Spark. Box 2: Azure SOL Data Warehouse. Box 3: Azure SOL Data Warehouse. 
-- [ ] Box 1: HDinsight Spark. Box 2: Azure Data Lake Store. Box 3: Azure Data Lake Store. 
-- [ ] Box 1: Azure Data Lake Store. Box 2: Azure SOL Data Warehouse. Box 3: HDinsight Spark. 
+- [x] Box 1: Azure Data Lake Store. Box 2: HDinsight Spark. Box 3: Azure SOL Data Warehouse.
+- [ ] Box 1: HDinsight Spark. Box 2: Azure SOL Data Warehouse. Box 3: Azure SOL Data Warehouse.
+- [ ] Box 1: HDinsight Spark. Box 2: Azure Data Lake Store. Box 3: Azure Data Lake Store.
+- [ ] Box 1: Azure Data Lake Store. Box 2: Azure SOL Data Warehouse. Box 3: HDinsight Spark.
 
 ### HOTSPOT A company plans to use Platform-as-a-Service (PaaS) to create the new data pipeline process. The process must meet the following requirements: Ingest: ✑ Access multiple data sources. ✑ Provide the ability to orchestrate workflow. ✑ Provide the capability to run SQL Server Integration Services packages. Store: ✑ Optimize storage for big data workloads. ✑ Provide encryption of data at rest. ✑ Operate with no size limits. Prepare and Train: ✑ Provide a fully-managed and interactive workspace for exploration and visualization. ✑ Provide the ability to program in R, SQL, Python, Scala, and Java. ✑ Provide seamless user authentication with Azure Active Directory. Model & Serve: ✑ Implement native columnar storage. ✑ Support for the SQL language ✑ Provide support for structured streaming. You need to build the data integration pipeline. Which technologies should you use?
 
 ![Question 132](images/question132.jpg)
 
-- [ ] Box 1: Azure Databricks. Box 2: Azure Data Factory. Box 3: Azure Data Factory. Box 4: Azure Data Lake Storage. 
-- [ ] Box 1: Azure Data Lake Storage. Box 2: Azure Data Lake Storage. Box 3: Azure Snapse Analvtics. Box 4: Azure Databricks. 
-- [x] Box 1: Azure Data Factory. Box 2: Azure Data Lake Storage. Box 3: Azure Databricks. Box 4: Azure Snapse Analvtics. 
-- [ ] Box 1: Azure Data Factory. Box 2: Azure Snapse Analvtics. Box 3: Azure Databricks. Box 4: Azure Snapse Analvtics. 
+- [ ] Box 1: Azure Databricks. Box 2: Azure Data Factory. Box 3: Azure Data Factory. Box 4: Azure Data Lake Storage.
+- [ ] Box 1: Azure Data Lake Storage. Box 2: Azure Data Lake Storage. Box 3: Azure Snapse Analvtics. Box 4: Azure Databricks.
+- [x] Box 1: Azure Data Factory. Box 2: Azure Data Lake Storage. Box 3: Azure Databricks. Box 4: Azure Snapse Analvtics.
+- [ ] Box 1: Azure Data Factory. Box 2: Azure Snapse Analvtics. Box 3: Azure Databricks. Box 4: Azure Snapse Analvtics.
 
 ### HOTSPOT From a website analytics system, you receive data extracts about user interactions such as downloads, link clicks, form submissions, and video plays. The data contains the following columns. You need to design a star schema to support analytical queries of the data. The star schema will contain four tables including a date dimension. To which table should you add each column?
 
 ![Question 133](images/question133.jpg)
 
-- [ ] Box 1: DimChannel. Box 2: FactEvents. Box 3: FactEvents. 
-- [x] Box 1: DimEvent. Box 2: DimChannel. Box 3: FactEvents. 
-- [ ] Box 1: FactEvents. Box 2: DimEvent. Box 3: DimEvent. 
-- [ ] Box 1: FactEvents. Box 2: DimChannel. Box 3: DimEvent. 
+- [ ] Box 1: DimChannel. Box 2: FactEvents. Box 3: FactEvents.
+- [x] Box 1: DimEvent. Box 2: DimChannel. Box 3: FactEvents.
+- [ ] Box 1: FactEvents. Box 2: DimEvent. Box 3: DimEvent.
+- [ ] Box 1: FactEvents. Box 2: DimChannel. Box 3: DimEvent.
 
 ### DRAG DROP You have a table named SalesFact in an enterprise data warehouse in Azure Synapse Analytics. SalesFact contains sales data from the past 36 months and has the following characteristics: ✑ Is partitioned by month ✑ Contains one billion rows ✑ Has clustered columnstore indexes At the beginning of each month, you need to remove data from SalesFact that is older than 36 months as quickly as possible. Which three actions should you perform in sequence in a stored procedure?
 
 ![Question 134](images/question134.jpg)
 
-- [ ] Box 1: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 2: Drop the SalesFact_Work table. Box 3: Switch the partition containing the stale data from SalesFact to SalesFact_Work. 
-- [ ] Box 1: Drop the SalesFact_Work table. Box 2: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 3: Drop the SalesFact_Work table. 
-- [x] Box 1: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 2: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 3: Drop the SalesFact_Work table. 
-- [ ] Box 1: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 2: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 3: Create an empty table named SalesFact _Work that has the same schema as SalesFact. 
+- [ ] Box 1: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 2: Drop the SalesFact_Work table. Box 3: Switch the partition containing the stale data from SalesFact to SalesFact_Work.
+- [ ] Box 1: Drop the SalesFact_Work table. Box 2: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 3: Drop the SalesFact_Work table.
+- [x] Box 1: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 2: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 3: Drop the SalesFact_Work table.
+- [ ] Box 1: Switch the partition containing the stale data from SalesFact to SalesFact_Work. Box 2: Create an empty table named SalesFact _Work that has the same schema as SalesFact. Box 3: Create an empty table named SalesFact _Work that has the same schema as SalesFact.
 
 ### DRAG DROP You are responsible for providing access to an Azure Data Lake Storage Gen2 account. Your user account has contributor access to the storage account, and you have the application ID and access key. You plan to use PolyBase to load data into an enterprise data warehouse in Azure Synapse Analytics. You need to configure PolyBase to connect the data warehouse to storage account. Which three components should you create in sequence?
 
 ![Question 135](images/question135.jpg)
 
-- [ ] Box 1: an external data source. Box 2: a database scoped credential. Box 3: an external file format. 
+- [ ] Box 1: an external data source. Box 2: a database scoped credential. Box 3: an external file format.
 - [ ] Box 1: an external file format. Box 2: an external data source. Box 3: a database scoped credential.
 - [ ] Box 1: an external file format. Box 2: a database scoped credential. Box 3: an external data source.
 - [x] Box 1: a database scoped credential. Box 2: an external data source. Box 3: an external file format.
@@ -861,19 +861,19 @@
 
 ![Question 136](images/question136.jpg)
 
-- [ ] Box 1: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 2: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table. Box 3: From the Data Factory authoring Ul, publish the pipelines. 
-- [x] Box 1: From the Data Factory authoring Ul, publish the pipelines. Box 2: From the Data Factory authoring Ul, publish the pipelines. Box 3: From the Data Factory authoring Ul, generate a user property for Source on all activities. 
-- [ ] Box 1: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 2: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table. Box 3: From the Data Factory authoring Ul, generate a user property for Source on all activities. 
-- [ ] Box 1: From the Data Factory authoring Ul, publish the pipelines. Box 2: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 3: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table. 
+- [ ] Box 1: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 2: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table. Box 3: From the Data Factory authoring Ul, publish the pipelines.
+- [x] Box 1: From the Data Factory authoring Ul, publish the pipelines. Box 2: From the Data Factory authoring Ul, publish the pipelines. Box 3: From the Data Factory authoring Ul, generate a user property for Source on all activities.
+- [ ] Box 1: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 2: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table. Box 3: From the Data Factory authoring Ul, generate a user property for Source on all activities.
+- [ ] Box 1: From the Data Factory authoring Ul, publish the pipelines. Box 2: From the Data Factory authoring Ul, generate a user property for Source on all activities. Box 3: From the Data Factory monitoring app, add the Source user property to the Pipeline Runs table.
 
 ### HOTSPOT You are processing streaming data from vehicles that pass through a toll booth. You need to use Azure Stream Analytics to return the license plate, vehicle make, and hour the last vehicle passed during each 10-minute window. How should you complete the query?
 
 ![Question 137](images/question137.jpg)
 
-- [ ] Box 1: TumblingWindow. Box 2: MAX. Box 3: MAX. 
-- [ ] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF. 
-- [ ] Box 1: DATEDIFF. Box 2: MAX. Box 3: TumblingWindow. 
-- [x] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF. 
+- [ ] Box 1: TumblingWindow. Box 2: MAX. Box 3: MAX.
+- [ ] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF.
+- [ ] Box 1: DATEDIFF. Box 2: MAX. Box 3: TumblingWindow.
+- [x] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF.
 
 ### You plan to create an Azure Synapse Analytics dedicated SQL pool. You need to minimize the time it takes to identify queries that return confidential information as defined by the company’s data privacy regulations and the users who executed the queues. Which two components should you include in the solution?
 
@@ -886,28 +886,28 @@
 
 ![Question 138](images/question138.jpg)
 
-- [ ] Box 1: Sliding. Box 2: Hopping. Box 3: Hopping. 
-- [x] Box 1: Tumbling. Box 2: Hopping. Box 3: Sliding. 
-- [ ] Box 1: Sliding. Box 2: Sliding. Box 3: Tumbling. 
-- [ ] Box 1: Sliding. Box 2: Tumbling. Box 3: Tumbling. 
+- [ ] Box 1: Sliding. Box 2: Hopping. Box 3: Hopping.
+- [x] Box 1: Tumbling. Box 2: Hopping. Box 3: Sliding.
+- [ ] Box 1: Sliding. Box 2: Sliding. Box 3: Tumbling.
+- [ ] Box 1: Sliding. Box 2: Tumbling. Box 3: Tumbling.
 
 ### DRAG DROP You need to create an Azure Data Factory pipeline to process data for the following three departments at your company: Ecommerce, retail, and wholesale. The solution must ensure that data can also be processed for the entire company. How should you complete the Data Factory data flow script?
 
 ![Question 139](images/question139.jpg)
 
-- [ ] Box 1: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. Box 2: disjoints false. Box 3: ecommerce, retail, wholesale, all. 
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. 
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. 
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. 
+- [x] Box 1: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. Box 2: disjoints false. Box 3: ecommerce, retail, wholesale, all.
+- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
+- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
+- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
 
 ### HOTSPOT You have a data model that you plan to implement in a data warehouse in Azure Synapse Analytics as shown in the following exhibit. All the dimension tables will be less than 2 GB after compression, and the fact table will be approximately 6 TB. Which type of table should you use for each table?
 
 ![Question 140](images/question140.jpg)
 
-- [ ] Box 1: Replicated. Box 2: Hash distributed. Box 3: Round-robin. Box 4: Replicated. 
-- [ ] Box 1: Round-robin. Box 2: Round-robin. Box 3: Round-robin. Box 4: Round-robin. 
-- [x] Box 1: Replicated. Box 2: Replicated. Box 3: Replicated. Box 4: Hash distributed. 
-- [ ] Box 1: Round-robin. Box 2: Hash distributed. Box 3: Round-robin. Box 4: Replicated. 
+- [ ] Box 1: Replicated. Box 2: Hash distributed. Box 3: Round-robin. Box 4: Replicated.
+- [ ] Box 1: Round-robin. Box 2: Round-robin. Box 3: Round-robin. Box 4: Round-robin.
+- [x] Box 1: Replicated. Box 2: Replicated. Box 3: Replicated. Box 4: Hash distributed.
+- [ ] Box 1: Round-robin. Box 2: Hash distributed. Box 3: Round-robin. Box 4: Replicated.
 
 ### You are designing an enterprise data warehouse in Azure Synapse Analytics that will contain a table named Customers. Customers will contain credit card information. You need to recommend a solution to provide salespeople with the ability to view all the entries in Customers. The solution must prevent all the salespeople from viewing or inferring the credit card information. What should you include in the recommendation?
 
@@ -975,46 +975,46 @@
 
 ![Question 141](images/question141.jpg)
 
-- [ ] Box 1: LIMIT DURATION. Box 2: LAG. 
-- [x] Box 1: LAG. Box 2: LIMIT DURATION. 
-- [ ] Box 1: OFFSET. Box 2: OFFSET. 
-- [ ] Box 1: LAG. Box 2: LAG. 
+- [ ] Box 1: LIMIT DURATION. Box 2: LAG.
+- [x] Box 1: LAG. Box 2: LIMIT DURATION.
+- [ ] Box 1: OFFSET. Box 2: OFFSET.
+- [ ] Box 1: LAG. Box 2: LAG.
 
 ### HOTSPOT You are creating dimensions for a data warehouse in an Azure Synapse Analytics dedicated SQL pool. You create a table by using the Transact-SQL statement shown in the following exhibit.
 
 ![Question 142](images/question142.jpg)
 
-- [ ] Box 1: Type 0. Box 2: Type 2. 
-- [ ] Box 1: Type 0. Box 2: Type 2. 
-- [ ] Box 1: a business key. Box 2: Type 0. 
-- [x] Box 1: Type 2. Box 2: a business key. 
+- [ ] Box 1: Type 0. Box 2: Type 2.
+- [ ] Box 1: Type 0. Box 2: Type 2.
+- [ ] Box 1: a business key. Box 2: Type 0.
+- [x] Box 1: Type 2. Box 2: a business key.
 
 ### HOTSPOT You use Azure Data Factory to prepare data to be queried by Azure Synapse Analytics serverless SQL pools. Files are initially ingested into an Azure Data Lake Storage Gen2 account as 10 small JSON files. Each file contains the same data attributes and data from a subsidiary of your company. You need to move the files to a different folder and transform the data to meet the following requirements: ✑ Provide the fastest possible query times. ✑ Automatically infer the schema from the underlying files. How should you configure the Data Factory copy activity?
 
 ![Question 143](images/question143.jpg)
 
-- [ ] Box 1: Parquet. Box 2: Parquet. 
-- [x] Box 1: Preserve hierarchy. Box 2: Parquet. 
-- [ ] Box 1: Parquet. Box 2: Preserve hierarchy. 
-- [ ] Box 1: Preserve hierarchy. Box 2: Preserve hierarchy. 
+- [ ] Box 1: Parquet. Box 2: Parquet.
+- [x] Box 1: Preserve hierarchy. Box 2: Parquet.
+- [ ] Box 1: Parquet. Box 2: Preserve hierarchy.
+- [ ] Box 1: Preserve hierarchy. Box 2: Preserve hierarchy.
 
 ### DRAG DROP You have an Azure data factory. You need to ensure that pipeline-run data is retained for 120 days. The solution must ensure that you can query the data by using the Kusto query language. Which four actions should you perform in sequence?
 
 ![Question 144](images/question144.jpg)
 
-- [ ] Box 1: From the Azure portal, add a diagnostic setting. Box 2: Create an Azure Storage account that| has a lifecycle policy. Box 3: Send the data to a Log Analytics workspace. Box 4: Send the data to a Log Analytics workspace. 
-- [ ] Box 1: Send the data to a Log Analytics workspace. Box 2: From the Azure portal, add a diagnostic setting. Box 3: Send the data to a Log Analytics workspace. Box 4: From the Azure portal, add a diagnostic setting. 
-- [x] Box 1: Create an Azure Storage account that| has a lifecycle policy. Box 2: Create a Log Analytics workspace that has Data Retention set to 120 days. Box 3: From the Azure portal, add a diagnostic setting. Box 4: Send the data to a Log Analytics workspace. 
-- [ ] Box 1: Create a Log Analytics workspace that has Data Retention set to 120 days. Box 2: Create an Azure Storage account that| has a lifecycle policy. Box 3: Create an Azure Storage account that| has a lifecycle policy. Box 4: From the Azure portal, add a diagnostic setting. 
+- [ ] Box 1: From the Azure portal, add a diagnostic setting. Box 2: Create an Azure Storage account that| has a lifecycle policy. Box 3: Send the data to a Log Analytics workspace. Box 4: Send the data to a Log Analytics workspace.
+- [ ] Box 1: Send the data to a Log Analytics workspace. Box 2: From the Azure portal, add a diagnostic setting. Box 3: Send the data to a Log Analytics workspace. Box 4: From the Azure portal, add a diagnostic setting.
+- [x] Box 1: Create an Azure Storage account that| has a lifecycle policy. Box 2: Create a Log Analytics workspace that has Data Retention set to 120 days. Box 3: From the Azure portal, add a diagnostic setting. Box 4: Send the data to a Log Analytics workspace.
+- [ ] Box 1: Create a Log Analytics workspace that has Data Retention set to 120 days. Box 2: Create an Azure Storage account that| has a lifecycle policy. Box 3: Create an Azure Storage account that| has a lifecycle policy. Box 4: From the Azure portal, add a diagnostic setting.
 
 ### HOTSPOT You need to collect application metrics, streaming query events, and application log messages for an Azure Databrick cluster. Which type of library and workspace should you implement?
 
 ![Question 145](images/question145.jpg)
 
-- [ ] Box 1: Azure Log Analytics. Box 2: Azure Machine Learning. 
-- [x] Box 1: Azure Databricks Monitoring Library. Box 2: Azure Log Analytics. 
-- [ ] Box 1: Azure Machine Learning. Box 2: Azure Databricks Monitoring Library. 
-- [ ] Box 1: Azure Log Analytics. Box 2: Azure Log Analytics. 
+- [ ] Box 1: Azure Log Analytics. Box 2: Azure Machine Learning.
+- [x] Box 1: Azure Databricks Monitoring Library. Box 2: Azure Log Analytics.
+- [ ] Box 1: Azure Machine Learning. Box 2: Azure Databricks Monitoring Library.
+- [ ] Box 1: Azure Log Analytics. Box 2: Azure Log Analytics.
 
 ### What should you recommend to prevent users outside the Litware on-premises network from accessing the analytical data store?
 
@@ -1035,10 +1035,10 @@
 
 ![Question 146](images/question146.jpg)
 
-- [ ] Box 1: Azure Stream Analytics. Box 2: Azure Event Hub!. Box 3: Microsoft Power BI. 
-- [ ] Box 1: Azure Stream Analytics. Box 2: Azure Stream Analytics. Box 3: Azure Event Hub!. 
-- [ ] Box 1: Microsoft Power BI. Box 2: Azure Event Hub!. Box 3: Azure Event Hub!. 
-- [x] Box 1: Azure Event Hub!. Box 2: Microsoft Power BI. Box 3: Azure Stream Analytics. 
+- [ ] Box 1: Azure Stream Analytics. Box 2: Azure Event Hub!. Box 3: Microsoft Power BI.
+- [ ] Box 1: Azure Stream Analytics. Box 2: Azure Stream Analytics. Box 3: Azure Event Hub!.
+- [ ] Box 1: Microsoft Power BI. Box 2: Azure Event Hub!. Box 3: Azure Event Hub!.
+- [x] Box 1: Azure Event Hub!. Box 2: Microsoft Power BI. Box 3: Azure Stream Analytics.
 
 ### You have an Azure Synapse workspace named MyWorkspace that contains an Apache Spark database named mytestdb. You run the following command in an Azure Synapse Analytics Spark pool in MyWorkspace. CREATE TABLE mytestdb.myParquetTable( EmployeeID int, EmployeeName string, EmployeeStartDate date) USING Parquet You then use Spark to insert a row into mytestdb.myParquetTable. The row contains the following data. One minute later, you execute the following query from a serverless SQL pool in MyWorkspace. SELECT EmployeeID FROM mytestdb.dbo.myParquetTable WHERE name = ‘Alice’; What will be returned by the query?
 
@@ -1050,17 +1050,17 @@
 
 ![Question 147](images/question147.jpg)
 
-- [x] Box 1: Hash. Box 2: Clustered columnstore. Box 3: Date. 
-- [ ] Box 1: Clustered columnstore. Box 2: Date. Box 3: Date. 
-- [ ] Box 1: Clustered columnstore. Box 2: Date. Box 3: Hash. 
-- [ ] Box 1: Date. Box 2: Hash. Box 3: Date. 
+- [x] Box 1: Hash. Box 2: Clustered columnstore. Box 3: Date.
+- [ ] Box 1: Clustered columnstore. Box 2: Date. Box 3: Date.
+- [ ] Box 1: Clustered columnstore. Box 2: Date. Box 3: Hash.
+- [ ] Box 1: Date. Box 2: Hash. Box 3: Date.
 
 ### You are designing a partition strategy for a fact table in an Azure Synapse Analytics dedicated SQL pool. The table has the following specifications: • Contain sales data for 20,000 products. • Use hash distribution on a column named ProduclID, • Contain 2.4 billion records for the years 20l9 and 2020. Which number of partition ranges provides optimal compression and performance of the clustered columnstore index?
 
 - [ ] 40
-- [x] 240 
+- [x] 240
 - [ ] 400
-- [ ] 2,400 
+- [ ] 2,400
 
 ### You use Azure Data Lake Storage Gen2. You need to ensure that workloads can use filter predicates and column projections to filter data at the time the data is read from disk. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.
 
@@ -1085,14 +1085,14 @@
 - [ ] Use a customer-managed key to enable double encryption for the Azure Synapse workspace.
 - [ ] Create an Azure key vault in the Azure subscription grant access to the pool.
 
-### HOTSPOT You build an Azure Data Factory pipeline to move data from an Azure Data Lake Storage Gen2 container to a database in an Azure Synapse Analytics dedicated SQL pool. Data in the container is stored in the following folder structure. /in/{YYYY}/{MM}/{DD}/{HH}/{mm} The earliest folder is /in/2021/01/01/00/00. The latest folder is /in/2021/01/15/01/45. You need to configure a pipeline trigger to meet the following requirements: ✑ Existing data must be loaded. ✑ Data must be loaded every 30 minutes. ✑ Late-arriving data of up to two minutes must he included in the load for the time at which the data should have arrived. How should you configure the pipeline trigger? 
+### HOTSPOT You build an Azure Data Factory pipeline to move data from an Azure Data Lake Storage Gen2 container to a database in an Azure Synapse Analytics dedicated SQL pool. Data in the container is stored in the following folder structure. /in/{YYYY}/{MM}/{DD}/{HH}/{mm} The earliest folder is /in/2021/01/01/00/00. The latest folder is /in/2021/01/15/01/45. You need to configure a pipeline trigger to meet the following requirements: ✑ Existing data must be loaded. ✑ Data must be loaded every 30 minutes. ✑ Late-arriving data of up to two minutes must he included in the load for the time at which the data should have arrived. How should you configure the pipeline trigger?
 
 ![Question 148](images/question148.jpg)
 
-- [x] Box 1: Tumbling window. Box 2: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes. 
-- [ ] Box 1: Schedule. Box 2: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes. 
-- [ ] Box 1: Schedule. Box 2: Tumbling window. 
-- [ ] Box 1: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes. Box 2: Tumbling window. 
+- [x] Box 1: Tumbling window. Box 2: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes.
+- [ ] Box 1: Schedule. Box 2: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes.
+- [ ] Box 1: Schedule. Box 2: Tumbling window.
+- [ ] Box 1: Recurrence: 30 minutes, Start time: 2021-01-01100:00, Delay: 2 minutes. Box 2: Tumbling window.
 
 ### You are creating an Azure Data Factory data flow that will ingest data from a CSV file, cast columns to specified types of data, and insert the data into a table in an Azure Synapse Analytic dedicated SQL pool. The CSV file contains three columns named username, comment, and date. The data flow already contains the following: ✑ A source transformation. ✑ A Derived Column transformation to set the appropriate types of data. ✑ A sink transformation to land the data in the pool. You need to ensure that the data flow meets the following requirements: ✑ All valid rows must be written to the destination table. ✑ Truncation errors in the comment column must be avoided proactively. ✑ Any rows containing comment values that will cause truncation errors upon insert must be written to a file in blob storage. Which two actions should you perform?
 
@@ -1134,10 +1134,10 @@
 
 ![Question 149](images/question149.jpg)
 
-- [ ] Box 1: Create and configure Azure key vaults in two Azure regions. Box 2: Create and configure Azure key vaults in two Azure regions. 
-- [x] Box 1: TDE with customer-managed keys. Box 2: Create and configure Azure key vaults in two Azure regions. 
-- [ ] Box 1: Create and configure Azure key vaults in two Azure regions. Box 2: TDE with customer-managed keys. 
-- [ ] Box 1: TDE with customer-managed keys. Box 2: Enable Advanced Data Security on Server1. 
+- [ ] Box 1: Create and configure Azure key vaults in two Azure regions. Box 2: Create and configure Azure key vaults in two Azure regions.
+- [x] Box 1: TDE with customer-managed keys. Box 2: Create and configure Azure key vaults in two Azure regions.
+- [ ] Box 1: Create and configure Azure key vaults in two Azure regions. Box 2: TDE with customer-managed keys.
+- [ ] Box 1: TDE with customer-managed keys. Box 2: Enable Advanced Data Security on Server1.
 
 ### You have an enterprise data warehouse in Azure Synapse Analytics named DW1 on a server named Server1. You need to verify whether the size of the transaction log file for each distribution of DW1 is smaller than 160 GB. What should you do?
 
@@ -1158,19 +1158,19 @@
 
 ![Question 150](images/question150.jpg)
 
-- [ ] Box 1: CONVERT. Box 2: CONVERT. 
-- [ ] Box 1: COLLATE. Box 2: CONVERT. 
-- [x] Box 1: CONVERT. Box 2: COLLATE. 
-- [ ] Box 1: FLATTEN. Box 2: FLATTEN. 
+- [ ] Box 1: CONVERT. Box 2: CONVERT.
+- [ ] Box 1: COLLATE. Box 2: CONVERT.
+- [x] Box 1: CONVERT. Box 2: COLLATE.
+- [ ] Box 1: FLATTEN. Box 2: FLATTEN.
 
 ### HOTSPOT You are building a database in an Azure Synapse Analytics serverless SQL pool. You have data stored in Parquet files in an Azure Data Lake Storage Gen2 container. Records are structured as shown in the following sample. { "id": 123,\ "address_housenumber": "19c", "address_line": "Memory Lane", "applicant1_name": "Jane", "applicant2_name": "Dev" } The records contain two applicants at most. You need to build a table that includes only the address fields. How should you complete the Transact-SQL statement?
 
 ![Question 151](images/question151.jpg)
 
-- [ ] Box 1: OPENROWSET. Box 2: CREATE TABLE. 
-- [x] Box 1: CREATE EXTERNAL TABLE. Box 2: OPENROWSET. 
-- [ ] Box 1: OPENROWSET. Box 2: CREATE TABLE. 
-- [ ] Box 1: CREATE EXTERNAL TABLE. Box 2: CREATE EXTERNAL TABLE. 
+- [ ] Box 1: OPENROWSET. Box 2: CREATE TABLE.
+- [x] Box 1: CREATE EXTERNAL TABLE. Box 2: OPENROWSET.
+- [ ] Box 1: OPENROWSET. Box 2: CREATE TABLE.
+- [ ] Box 1: CREATE EXTERNAL TABLE. Box 2: CREATE EXTERNAL TABLE.
 
 ### You have an Azure Synapse Analytics job that uses Scala. You need to view the status of the job. What should you do?
 
@@ -1244,7 +1244,7 @@
 ### Solution: You use an Azure Synapse Analytics serverless SQL pool to create an external table that has an additional DateTime column. Does this meet the goal?
 
 - [ ] Yes
-- [x] No 
+- [x] No
 
 ### You need to design a solution that will process streaming data from an Azure Event Hub and output the data to Azure Data Lake Storage. The solution must ensure that analysts can interactively query the streaming data. What should you use?
 
@@ -1273,10 +1273,10 @@
 
 ![Question 152](images/question152.jpg)
 
-- [ ] Box 1: Flatten hierarchy. Box 2: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 3: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. 
-- [ ] Box 1: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 2: @trigger).startTime. Box 3: @trigger).startTime. 
-- [x] Box 1: @trigger).startTime. Box 2: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 3: Flatten hierarchy. 
-- [ ] Box 1: Flatten hierarchy. Box 2: Flatten hierarchy. Box 3: @trigger).startTime. 
+- [ ] Box 1: Flatten hierarchy. Box 2: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 3: AYYYYY/{MM)(DD)/{HH)_{deviceType).json.
+- [ ] Box 1: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 2: @trigger).startTime. Box 3: @trigger).startTime.
+- [x] Box 1: @trigger).startTime. Box 2: AYYYYY/{MM)(DD)/{HH)_{deviceType).json. Box 3: Flatten hierarchy.
+- [ ] Box 1: Flatten hierarchy. Box 2: Flatten hierarchy. Box 3: @trigger).startTime.
 
 ### You have an Azure Synapse Analytics dedicated SQL pool that contains a large fact table. The table contains 50 columns and 5 billion rows and is a heap. Most queries against the table aggregate values from approximately 100 million rows and return only two columns. You discover that the queries against the fact table are very slow. Which type of index should you add to provide the fastest query times?
 
@@ -1309,10 +1309,10 @@
 
 ![Question 153](images/question153.jpg)
 
-- [ ] Box 1: RDBMS. Box 2: RDBMS. 
-- [ ] Box 1: RDBMS. Box 2: abfs. 
-- [ ] Box 1: HADOOP. Box 2: abfs. 
-- [x] Box 1: abfs. Box 2: HADOOP. 
+- [ ] Box 1: RDBMS. Box 2: RDBMS.
+- [ ] Box 1: RDBMS. Box 2: abfs.
+- [ ] Box 1: HADOOP. Box 2: abfs.
+- [x] Box 1: abfs. Box 2: HADOOP.
 
 ### You have an Azure subscription that contains an Azure Synapse Analytics dedicated SQL pool named SQLPool1. SQLPool1 is currently paused. You need to restore the current state of SQLPool1 to a new SQL pool. What should you do first?
 
@@ -1324,7 +1324,7 @@
 ### Solution: You use a dedicated SQL pool to create an external table that has an additional DateTime column. Does this meet the goal?
 
 - [ ] Yes
-- [x] No 
+- [x] No
 
 ### You have an Azure subscription that contains an Azure Blob Storage account named storage1 and an Azure Synapse Analytics dedicated SQL pool named Pool1. You need to store data in storage1. The data will be read by Pool1. The solution must meet the following requirements: ✑ Enable Pool1 to skip columns and rows that are unnecessary in a query. ✑ Automatically create column statistics. ✑ Minimize the size of files. Which type of file should you use?
 
@@ -1335,19 +1335,19 @@
 
 ### HOTSPOT You are designing an enterprise data warehouse in Azure Synapse Analytics that will store website traffic analytics in a star schema. You plan to have a fact table for website visits. The table will be approximately 5 GB. You need to recommend which distribution type and index type to use for the table. The solution must provide the fastest query performance. What should you recommend?
 
-- [ ] Box 1: Clustered columnstore. Box 2: Clustered columnstore. 
-- [ ] Box 1: Clustered. Box 2: Nonclusteredi. 
-- [x] Box 1: Hash. Box 2: Clustered columnstore. 
-- [ ] Box 1: Clustered. Box 2: Nonclusteredi. 
+- [ ] Box 1: Clustered columnstore. Box 2: Clustered columnstore.
+- [ ] Box 1: Clustered. Box 2: Nonclusteredi.
+- [x] Box 1: Hash. Box 2: Clustered columnstore.
+- [ ] Box 1: Clustered. Box 2: Nonclusteredi.
 
 ### HOTSPOT You have an Azure Data Lake Storage Gen2 account named account1 that stores logs as shown in the following table. You do not expect that the logs will be accessed during the retention periods. You need to recommend a solution for account1 that meets the following requirements: ✑ Automatically deletes the logs at the end of each retention period ✑ Minimizes storage costs What should you include in the recommendation?
 
 ![Question 154](images/question154.jpg)
 
-- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier. 
-- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier. 
-- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Azure Blob storage litecycle manasement rules. 
-- [x] Box 1: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier. Box 2: Azure Blob storage litecycle manasement rules. 
+- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier.
+- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier.
+- [ ] Box 1: Azure Blob storage litecycle manasement rules. Box 2: Azure Blob storage litecycle manasement rules.
+- [x] Box 1: Stote the infrastructure loos in the Cool accoss tier and the application lous in the archive access tier. Box 2: Azure Blob storage litecycle manasement rules.
 
 ### You plan to perform batch processing in Azure Databricks once daily. Which type of Databricks cluster should you use?
 
@@ -1359,28 +1359,28 @@
 
 ![Question 155](images/question155.jpg)
 
-- [x] Box 1: Replicated. Box 2: Round-robin. Box 3: Hash. 
-- [ ] Box 1: Round-robin. Box 2: Hash. Box 3: Replicated. 
-- [ ] Box 1: Replicated. Box 2: Replicated. Box 3: Hash. 
-- [ ] Box 1: Round-robin. Box 2: Hash. Box 3: Round-robin. 
+- [x] Box 1: Replicated. Box 2: Round-robin. Box 3: Hash.
+- [ ] Box 1: Round-robin. Box 2: Hash. Box 3: Replicated.
+- [ ] Box 1: Replicated. Box 2: Replicated. Box 3: Hash.
+- [ ] Box 1: Round-robin. Box 2: Hash. Box 3: Round-robin.
 
 ### HOTSPOT You have an Azure subscription that contains an Azure Synapse Analytics workspace named workspace1. Workspace1 contains a dedicated SQL pool named SQL Pool and an Apache Spark pool named sparkpool. Sparkpool1 contains a DataFrame named pyspark.df. You need to write the contents of pyspark_df to a tabte in SQLPooM by using a PySpark notebook. How should you complete the code?
 
 ![Question 156](images/question156.jpg)
 
-- [ ] Box 1: %%spark. Box 2: % %local. 
-- [ ] Box 1: % %local. Box 2: % %local. 
-- [ ] Box 1: synapsesal. Box 2: synapsesal. 
-- [x] Box 1: % %local. Box 2: synapsesal. 
+- [ ] Box 1: %%spark. Box 2: % %local.
+- [ ] Box 1: % %local. Box 2: % %local.
+- [ ] Box 1: synapsesal. Box 2: synapsesal.
+- [x] Box 1: % %local. Box 2: synapsesal.
 
 ### HOTSPOT You have an Azure subscription that contains an Azure Databricks workspace named databricks1 and an Azure Synapse Analytics workspace named synapse1. The synapse1 workspace contains an Apache Spark pool named pool1. You need to share an Apache Hive catalog of pool1 with databricks1. What should you do?
 
 ![Question 157](images/question157.jpg)
 
-- [ ] Box 1: A Hive metastore. Box 2: A Hive metastore. 
-- [x] Box 1: Azure SOl Database. Box 2: A Hive metastore. 
-- [ ] Box 1: Azure Data Lake Storage Gen2. Box 2: Azure SOl Database. 
-- [ ] Box 1: Azure Data Lake Storage Gen2. Box 2: Azure SOl Database. 
+- [ ] Box 1: A Hive metastore. Box 2: A Hive metastore.
+- [x] Box 1: Azure SOl Database. Box 2: A Hive metastore.
+- [ ] Box 1: Azure Data Lake Storage Gen2. Box 2: Azure SOl Database.
+- [ ] Box 1: Azure Data Lake Storage Gen2. Box 2: Azure SOl Database.
 
 ### You are designing a dimension table in an Azure Synapse Analytics dedicated SQL pool. You need to create a surrogate key for the table. The solution must provide the fastest query performance. What should you use for the surrogate key?
 
@@ -1406,19 +1406,19 @@
 
 ![Question 158](images/question158.jpg)
 
-- [ ] Box 1: 4. Box 2: 4. 
-- [ ] Box 1: 22. Box 2: 22. 
-- [x] Box 1: 22. Box 2: 4. 
-- [ ] Box 1: 10. Box 2: 3. 
+- [ ] Box 1: 4. Box 2: 4.
+- [ ] Box 1: 22. Box 2: 22.
+- [x] Box 1: 22. Box 2: 4.
+- [ ] Box 1: 10. Box 2: 3.
 
 ### HOTSPOT You have an Azure Synapse Analytics pipeline named Pipeline1 that contains a data flow activity named Dataflow1. Pipeline1 retrieves files from an Azure Data Lake Storage Gen 2 account named storage1. Dataflow1 uses the AutoResolveIntegrationRuntime integration runtime configured with a core count of 128. You need to optimize the number of cores used by Dataflow1 to accommodate the size of the files in storage1. What should you configure?
 
 ![Question 159](images/question159.jpg)
 
-- [x] Box 1: A Get Metadata activity. Box 2: Dynamic content. 
-- [ ] Box 1: A Get Metadata activity. Box 2: A Get Metadata activity. 
-- [ ] Box 1: Dynamic content. Box 2: Parameters. 
-- [ ] Box 1: Parameters. Box 2: A Get Metadata activity. 
+- [x] Box 1: A Get Metadata activity. Box 2: Dynamic content.
+- [ ] Box 1: A Get Metadata activity. Box 2: A Get Metadata activity.
+- [ ] Box 1: Dynamic content. Box 2: Parameters.
+- [ ] Box 1: Parameters. Box 2: A Get Metadata activity.
 
 ### You have an enterprise data warehouse in Azure Synapse Analytics. Using PolyBase, you create an external table named [Ext].[Items] to query Parquet files stored in Azure Data Lake Storage Gen2 without importing the data to the data warehouse. The external table has three columns.You discover that the Parquet files have a fourth column named ItemID. Which command should you run to add the ItemID column to the external table?
 
@@ -1482,10 +1482,10 @@
 
 ![Question 160](images/question160.jpg)
 
-- [ ] Box 1: Copy data. Box 2: Custom. 
-- [ ] Box 1: Copy data. Box 2: Filter. 
-- [x] Box 1: Lookup. Box 2: Copy data. 
-- [ ] Box 1: Lookup. Box 2: Lookup. 
+- [ ] Box 1: Copy data. Box 2: Custom.
+- [ ] Box 1: Copy data. Box 2: Filter.
+- [x] Box 1: Lookup. Box 2: Copy data.
+- [ ] Box 1: Lookup. Box 2: Lookup.
 
 ### You have an Azure Synapse Analytics workspace named WS1 that contains an Apache Spark pool named Pool1. You plan to create a database named D61 in Pool1. You need to ensure that when tables are created in DB1, the tables are available automatically as external tables to the built-in serverless SQL pod. Which format should you use for the tables in DB1?
 
@@ -1504,19 +1504,19 @@
 
 ![Question 161](images/question161.jpg)
 
-- [x] Box 1: DISTRIBUTION. Box 2: PARTITION. 
-- [ ] Box 1: PARTITION FUNCTION. Box 2: DISTRIBUTION. 
-- [ ] Box 1: CLUSTERED INDEX. Box 2: DISTRIBUTION. 
-- [ ] Box 1: CLUSTERED INDEX. Box 2: PARTITION FUNCTION. 
+- [x] Box 1: DISTRIBUTION. Box 2: PARTITION.
+- [ ] Box 1: PARTITION FUNCTION. Box 2: DISTRIBUTION.
+- [ ] Box 1: CLUSTERED INDEX. Box 2: DISTRIBUTION.
+- [ ] Box 1: CLUSTERED INDEX. Box 2: PARTITION FUNCTION.
 
 ### HOTSPOT You configure version control for an Azure Data Factory instance as shown in the following exhibit.
 
 ![Question 162](images/question162.jpg)
 
-- [ ] Box 1: adf_publish. Box 2: adf_publish. 
-- [ ] Box 1: /dwh_batchetl/adf_publish/contososales. Box 2: main. 
-- [ ] Box 1: main. Box 2: /dwh_batchetl/adf_publish/contososales. 
-- [x] Box 1: adf_publish. Box 2: /dwh_batchetl/adf_publish/contososales. 
+- [ ] Box 1: adf_publish. Box 2: adf_publish.
+- [ ] Box 1: /dwh_batchetl/adf_publish/contososales. Box 2: main.
+- [ ] Box 1: main. Box 2: /dwh_batchetl/adf_publish/contososales.
+- [x] Box 1: adf_publish. Box 2: /dwh_batchetl/adf_publish/contososales.
 
 ### HOTSPOT You have an Azure Data Factory pipeline that has the activities shown in the following exhibit.
 
@@ -1531,10 +1531,10 @@
 
 ![Question 164](images/question164.jpg)
 
-- [ ] Box 1: Windows authentication. Box 2: Microsoft SQL Server authentication. 
-- [ ] Box 1: Azure AD authentication. Box 2: Azure AD authentication. 
-- [ ] Box 1: Windows authentication. Box 2: Microsoft SQL Server authentication. 
-- [x] Box 1: Azure AD authentication. Box 2: Contained database users. 
+- [ ] Box 1: Windows authentication. Box 2: Microsoft SQL Server authentication.
+- [ ] Box 1: Azure AD authentication. Box 2: Azure AD authentication.
+- [ ] Box 1: Windows authentication. Box 2: Microsoft SQL Server authentication.
+- [x] Box 1: Azure AD authentication. Box 2: Contained database users.
 
 ### You have an Azure Data Factory that contains 10 pipelines. You need to label each pipeline with its main purpose of either ingest, transform, or load. The labels must be available for grouping and filtering when using the monitoring experience in Data Factory. What should you add to each pipeline?
 
@@ -1554,10 +1554,10 @@
 
 ![Question 165](images/question165.jpg)
 
-- [ ] Box 1: Timeslice partitioning in the folders. Box 2: CSV . 
-- [ ] Box 1: Timeslice partitioning in the folders. Box 2: Timeslice partitioning in the folders. 
-- [ ] Box 1: Apache Parquet. Box 2: CSV . 
-- [x] Box 1: Timeslice partitioning in the folders. Box 2: Apache Parquet. 
+- [ ] Box 1: Timeslice partitioning in the folders. Box 2: CSV .
+- [ ] Box 1: Timeslice partitioning in the folders. Box 2: Timeslice partitioning in the folders.
+- [ ] Box 1: Apache Parquet. Box 2: CSV .
+- [x] Box 1: Timeslice partitioning in the folders. Box 2: Apache Parquet.
 
 ### You are designing 2 solution that will use tables in Delta Lake on Azure Databricks. You need to minimize how long it takes to perform the following: * Queries against non-partitioned tables * Joins on non-partitioned columns Which two options should you include in the solution?
 
@@ -1570,10 +1570,10 @@
 
 ![Question 166](images/question166.jpg)
 
-- [ ] Box 1: Hash([ProductKey)). Box 2: ( INDEX on [ProductKey). 
-- [ ] Box 1: ( CLUSTERED COLUMNSTORE INDEX. Box 2: ( CLUSTERED COLUMNSTORE INDEX. 
-- [x] Box 1: ( CLUSTERED COLUMNSTORE INDEX. Box 2: Hash([ProductKey)). 
-- [ ] Box 1: ( INDEX on [ProductKey). Box 2: Hash([ProductKey)). 
+- [ ] Box 1: Hash([ProductKey)). Box 2: ( INDEX on [ProductKey).
+- [ ] Box 1: ( CLUSTERED COLUMNSTORE INDEX. Box 2: ( CLUSTERED COLUMNSTORE INDEX.
+- [x] Box 1: ( CLUSTERED COLUMNSTORE INDEX. Box 2: Hash([ProductKey)).
+- [ ] Box 1: ( INDEX on [ProductKey). Box 2: Hash([ProductKey)).
 
 ### You have an Azure Synapse Analytics dedicated SQL pool. You need to Create a fact table named Table1 that will store sales data from the last three years. The solution must be optimized for the following query operations: Show order counts by week. • Calculate sales totals by region. • Calculate sales totals by product. • Find all the orders from a given month.  Which data should you use to partition Table1?
 
@@ -1586,10 +1586,10 @@
 
 ![Question 167](images/question167.jpg)
 
-- [ ] Box 1: Azure Active Directory credential passthrough. Box 2: Azure Active Directory credential passthrough. 
-- [x] Box 1: Personal access tokens. Box 2: Azure Active Directory credential passthrough. 
-- [ ] Box 1: Personal access tokens. Box 2: Azure Active Directory credential passthrough. 
-- [ ] Box 1: Azure Active Directory credential passthrough. Box 2: . 
+- [ ] Box 1: Azure Active Directory credential passthrough. Box 2: Azure Active Directory credential passthrough.
+- [x] Box 1: Personal access tokens. Box 2: Azure Active Directory credential passthrough.
+- [ ] Box 1: Personal access tokens. Box 2: Azure Active Directory credential passthrough.
+- [ ] Box 1: Azure Active Directory credential passthrough. Box 2: .
 
 ### You have an Azure Synapse Analytics dedicated SQL pod. You need to create a pipeline that will execute a stored procedure in the dedicated SQL pool and use the returned result set as the input (or a downstream activity. The solution must minimize development effort. Which Type of activity should you use in the pipeline?
 
@@ -1621,10 +1621,10 @@
 
 ![Question 168](images/question168.jpg)
 
-- [ ] Box 1: Apache Parquet. Box 2: The dedicated SQL pool. 
-- [ ] Box 1: Apache Parquet. Box 2: The dedicated SQL pool. 
-- [x] Box 1: The dedicated SQL pool. Box 2: Apache Parquet. 
-- [ ] Box 1: JSON. Box 2: JSON. 
+- [ ] Box 1: Apache Parquet. Box 2: The dedicated SQL pool.
+- [ ] Box 1: Apache Parquet. Box 2: The dedicated SQL pool.
+- [x] Box 1: The dedicated SQL pool. Box 2: Apache Parquet.
+- [ ] Box 1: JSON. Box 2: JSON.
 
 ### You are designing an inventory updates table in an Azure Synapse Analytics dedicated SQL pool. The table will have a clustered columnstore index and will include the following columns: You identify the following usage patterns: ✑ Analysts will most commonly analyze transactions for a warehouse. ✑ Queries will summarize by product category type, date, and/or inventory event type. You need to recommend a partition strategy for the table to minimize query times. On which column should you partition the table?
 
@@ -1665,19 +1665,19 @@
 
 ![Question 169](images/question169.jpg)
 
-- [x] Box 1: moved to cool storage. Box 2: container1/contoso.csv. 
-- [ ] Box 1: container1/contoso.csv. Box 2: deleted from the container. 
-- [ ] Box 1: moved to cool storage. Box 2: container1/contoso.csv. 
-- [ ] Box 1: moved to cool storage. Box 2: moved to cool storage. 
+- [x] Box 1: moved to cool storage. Box 2: container1/contoso.csv.
+- [ ] Box 1: container1/contoso.csv. Box 2: deleted from the container.
+- [ ] Box 1: moved to cool storage. Box 2: container1/contoso.csv.
+- [ ] Box 1: moved to cool storage. Box 2: moved to cool storage.
 
 ### HOTSPOT You have an Azure Synapse Analytics dedicated SQL pool named Pool1 that contains an external table named Sales. Sales contains sales data. Each row in Sales contains data on a single sale, including the name of the salesperson. You need to implement row-level security (RLS). The solution must ensure that the salespeople can access only their respective sales. What should you do? To answer, select the appropriate options in the answer area.
 
 ![Question 170](images/question170.jpg)
 
-- [ ] Box 1: A table-valued function. Box 2: A security policy for Sales. 
-- [ ] Box 1: Database scoped credentials in Pool1. Box 2: A table-valued function. 
-- [ ] Box 1: Database scoped credentials in Pool1. Box 2: A security policy for Sales. 
-- [x] Box 1: A security policy for Sales. Box 2: A table-valued function. 
+- [ ] Box 1: A table-valued function. Box 2: A security policy for Sales.
+- [ ] Box 1: Database scoped credentials in Pool1. Box 2: A table-valued function.
+- [ ] Box 1: Database scoped credentials in Pool1. Box 2: A security policy for Sales.
+- [x] Box 1: A security policy for Sales. Box 2: A table-valued function.
 
 ### You are building a data flow in Azure Data Factory that upserts data into a table in an Azure Synapse Analytics dedicated SQL pool. You need to add a transformation to the data flow. The transformation must specify logic indicating when a row from the input data must be upserted into the sink. Which type of transformation should you add to the data flow?
 
@@ -1700,4 +1700,45 @@
 - [ ] Run the Copy Data tool and select Metadata-driven copy task.
 - [ ] Run the Copy Data tool and select Built-in copy task.
 
-### 
+### You are developing a solution that will stream to Azure Stream Analytics. The solution will have both streaming data and reference data. Which input type should you use for the reference data?
+
+- [ ] Azure Cosmos DB
+- [x] Azure Blob storage
+- [ ] Azure IoT Hub
+- [ ] Azure Event Hubs
+
+### Topic 3, Mix Questions You have an Azure Data Lake Storage account that has a virtual network service endpoint configured. You plan to use Azure Data Factory to extract data from the Data Lake Storage account. The data will then be loaded to a data warehouse in Azure Synapse Analytics by using PolyBase. Which authentication method should you use to access Data Lake Storage?
+
+- [ ] shared access key authentication
+- [x] managed identity authentication
+- [ ] account key authentication
+- [ ] service principal authentication
+
+### Solution: You modify the files to ensure that each row is more than 1 MB. Does this meet the goal?
+
+- [x] Yes
+- [ ] No
+
+### You have an Azure Data Lake Storage Gen2 container that contains 100 TB of data. You need to ensure that the data in the container is available for read workloads in a secondary region if an outage occurs in the primary region. The solution must minimize costs . Which type of data redundancy should you use?
+
+- [ ] zone-redundant storage (ZRS)
+- [x] read-access geo-redundant storage (RA-GRS)
+- [ ] locally-redundant storage (LRS)
+- [ ] geo-redundant storage (GRS)
+
+### You have several Azure Data Factory pipelines that contain a mix of the following types of activities. * Wrangling data flow * Notebook * Copy * jar Which two Azure services should you use to debug the activities? Each correct answer presents part of the solution NOTE: Each correct selection is worth one point.
+
+- [ ] Azure HDInsight
+- [x] Azure Databricks
+- [ ] Azure Machine Learning
+- [x] Azure Data Factory
+- [ ] Azure Synapse Analytics
+
+### You have an Azure Synapse Analytics dedicated SQL Pool1. Pool1 contains a partitioned fact table named dbo.Sales and a staging table named stg.Sales that has the matching table and partition definitions. You need to overwrite the content of the first partition in dbo.Sales with the content of the same partition in stg.Sales. The solution must minimize load times. What should you do?
+
+- [x] Switch the first partition from dbo.Sales to stg.Sales.
+- [ ] Switch the first partition from stg.Sales to dbo. Sales.
+- [ ] Update dbo.Sales from stg.Sales.
+- [ ] Insert the data from stg.Sales into dbo.Sales.
+
+###
