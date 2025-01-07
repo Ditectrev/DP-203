@@ -795,9 +795,9 @@
 ### You plan to implement an Azure Data Lake Storage Gen2 container that will contain CSV files. The size of the files will vary based on the number of events that occur per hour. File sizes range from 4.KB to 5 GB. You need to ensure that the files stored in the container are optimized for batch processing. What should you do?
 
 - [ ] Compress the files.
-- [ ] Merge the files.
+- [x] Merge the files.
 - [ ] Convert the files to JSON
-- [x] Convert the files to Avro.
+- [ ] Convert the files to Avro.
 
 ### HOTSPOT You are developing a solution using a Lambda architecture on Microsoft Azure. The data at test layer must meet the following requirements: Data storage: • Serve as a repository (or high volumes of large files in various formats. • Implement optimized storage for big data analytics workloads. • Ensure that data can be organized using a hierarchical structure. Batch processing: • Use a managed solution for in-memory computation processing. • Natively support Scala, Python, and R programming languages. • Provide the ability to resize and terminate the cluster automatically. Analytical data store: • Support parallel processing. • Use columnar storage. • Support SQL-based languages. You need to identify the correct technologies to build the Lambda architecture. Which technologies should you use?
 
@@ -1057,8 +1057,8 @@
 
 ### You are designing a partition strategy for a fact table in an Azure Synapse Analytics dedicated SQL pool. The table has the following specifications: • Contain sales data for 20,000 products. • Use hash distribution on a column named ProduclID, • Contain 2.4 billion records for the years 20l9 and 2020. Which number of partition ranges provides optimal compression and performance of the clustered columnstore index?
 
-- [ ] 40
-- [x] 240
+- [x] 40
+- [ ] 240
 - [ ] 400
 - [ ] 2,400
 
@@ -1209,9 +1209,9 @@
 
 ### You have a table in an Azure Synapse Analytics dedicated SQL pool. The table was created by using the following Transact-SQL statement. You need to alter the table to meet the following requirements: ✑ Ensure that users can identify the current manager of employees. ✑ Support creating an employee reporting hierarchy for your entire company. ✑ Provide fast lookup of the managers’ attributes such as name and job title. Which column should you add to the table?
 
-- [x] [ManagerEmployeeID] [int] NULL
+- [ ] [ManagerEmployeeID] [int] NULL
 - [ ] [ManagerEmployeeID] [smallint] NULL
-- [ ] [ManagerEmployeeKey] [int] NULL
+- [x] [ManagerEmployeeKey] [int] NULL
 - [ ] [ManagerName] [varchar](200) NULL
 
 ### A company uses Azure Stream Analytics to monitor devices. The company plans to double the number of devices that are monitored. You need to monitor a Stream Analytics job to ensure that there are enough processing resources to handle the additional load. Which metric should you monitor?
@@ -1721,8 +1721,8 @@
 
 ### You have an Azure Data Lake Storage Gen2 container that contains 100 TB of data. You need to ensure that the data in the container is available for read workloads in a secondary region if an outage occurs in the primary region. The solution must minimize costs . Which type of data redundancy should you use?
 
-- [ ] zone-redundant storage (ZRS)
-- [x] read-access geo-redundant storage (RA-GRS)
+- [x] zone-redundant storage (ZRS)
+- [ ] read-access geo-redundant storage (RA-GRS)
 - [ ] locally-redundant storage (LRS)
 - [ ] geo-redundant storage (GRS)
 
@@ -1741,4 +1741,155 @@
 - [ ] Update dbo.Sales from stg.Sales.
 - [ ] Insert the data from stg.Sales into dbo.Sales.
 
-###
+### ou plan to implement an Azure Data Lake Gen 2 storage account. You need to ensure that the data lake will remain available if a data center fails in the primary Azure region. The solution must minimize costs. Which type of replication should you use for the storage account?
+
+- [ ] geo-redundant storage (GRS)
+- [ ] geo-zone-redundant storage (GZRS)
+- [ ] locally-redundant storage (LRS)
+- [x] zone-redundant storage (ZRS)
+
+### You are designing a fact table named FactPurchase in an Azure Synapse Analytics dedicated SQL pool. The table contains purchases from suppliers for a retail store. FactPurchase will contain the following columns.
+
+- [ ] replicated
+- [x] hash-distributed on PurchaseKey
+- [ ] round-robin
+- [ ] hash-distributed on IsOrderFinalized
+
+### You are designing a financial transactions table in an Azure Synapse Analytics dedicated SQL pool. The table will have a clustered columnstore index and will include the following columns: ✑ TransactionType: 40 million rows per transaction type ✑ CustomerSegment: 4 million per customer segment ✑ TransactionMonth: 65 million rows per month AccountType: 500 million per account type You have the following query requirements: ✑ Analysts will most commonly analyze transactions for a given month. ✑ Transactions analysis will typically summarize transactions by transaction type, customer segment, and/or account type You need to recommend a partition strategy for the table to minimize query times. On which column should you recommend partitioning the table?
+
+- [ ] CustomerSegment
+- [ ] AccountType
+- [ ] TransactionType
+- [x] TransactionMonth
+
+### DRAG DROP - You need to build a solution to ensure that users can query specific files in an Azure Data Lake Storage Gen2 account from an Azure Synapse Analytics serverless SQL pool. Which three actions should you perform in sequence?
+
+![Question 171](images/question171.jpg)
+
+- [ ] Box 1: Create an external file format object. Box 2: Create an external file format object. Box 3: Create an external table.
+- [ ] Box 1: Create an external table. Box 2: Create an external data source. Box 3: Create an external table.
+- [x] Box 1: Create an external data source. Box 2: Create an external file format object. Box 3: Create an external table.
+- [ ] Box 1: Create an external table. Box 2: Create an external table. Box 3: Create an external data source.
+
+### ou are designing a data mart for the human resources (HR) department at your company. The data mart will contain employee information and employee transactions. From a source system, you have a flat extract that has the following fields: ✑ EmployeeIDFirstName - ✑ LastName ✑ Recipient ✑ GrossAmount ✑ TransactionID ✑ GovernmentID ✑ NetAmountPaid ✑ TransactionDate You need to design a star schema data model in an Azure Synapse Analytics dedicated SQL pool for the data mart. Which two tables should you create?
+
+- [ ] a dimension table for Transaction
+- [ ] a dimension table for EmployeeTransaction
+- [x] a dimension table for Employee
+- [ ] a fact table for Employee
+- [x] a fact table for Transaction
+
+### HOTSPOT  You have an Azure Synapse Analytics dedicated SQL pool named Pool1 and an Azure Data Lake Storage Gen2 account named Account1.  You plan to access the files in Account1 by using an external table. You need to create a data source in Pool1 that you can reference when you create the external table.How should you complete the Transact-SQL statement?
+
+![Question 172](images/question172.jpg)
+
+- [ ] Box 1: TYPE = BLOB_STORAGE. Box 2: PUSHDOWN = ON.
+- [ ] Box 1: PUSHDOWN = ON. Box 2: TYPE = HADOOP.
+- [ ] Box 1: blob. Box 2: TYPE = BLOB_STORAGE.
+- [x] Box 1: TYPE = HADOOP. Box 2: blob.
+
+### You are designing the folder structure for an Azure Data Lake Storage Gen2 account. You identify the following usage patterns: • Users will query data by using Azure Synapse Analytics serverless SQL pools and Azure Synapse Analytics serverless Apache Spark pools. • Most queries will include a filter on the current year or week.• Data will be secured by data source.  You need to recommend a folder structure that meets the following requirements: • Supports the usage pattern • Simplifies folder security • Minimizes query times Which folder structure should you recommend?
+
+- [x] \DataSource\SubjectArea\YYYY\WW\FileData_YYYY_MM_DD.parquet
+- [ ] \DataSource\SubjectArea\YYYY-WW\FileData_YYYY_MM_DD.parquet
+- [ ] DataSource\SubjectArea\WW\YYYY\FileData_YYYY_MM_DD.parquet
+- [ ] \YYYY\WW\DataSource\SubjectArea\FileData_YYYY_MM_DD.parquet
+- [ ] WW\YYYY\SubjectArea\DataSource\FileData_YYYY_MM_DD.parquet
+
+### You have an Azure Synapse Analytics dedicated SQL pool named Pool1. Pool1 contains a table named table1. You load 5 TB of data into table1. You need to ensure that columnstore compression is maximized for table1. Which statement should you execute?
+
+- [ ] DBCC INDEXDEFRAG (pool1, table1)
+- [ ] DBCC DBREINDEX (table1)
+- [ ] ALTER INDEX ALL on table1 REORGANIZE
+- [x] ALTER INDEX ALL on table1 REBUILD
+
+### You have an Azure Synapse Analytics dedicated SQL pool named pool1. You plan to implement a star schema in pool and create a new table named DimCustomer by using the following code. You need to ensure that DimCustomer has the necessary columns to support a Type 2 slowly changing dimension (SCD).  Which two columns should you add? Each correct answer presents part of the solution.
+
+- [ ] [HistoricalSalesPerson] [nvarchar] (256) NOT NULL
+- [x] [EffectiveEndDate] [datetime] NOT NULL
+- [ ] [PreviousModifiedDate] [datetime] NOT NULL
+- [ ] [RowID] [bigint] NOT NULL
+- [x] [EffectiveStartDate] [datetime] NOT NULL
+
+### You have an Azure subscription that contains an Azure Data Lake Storage Gen2 account named account1 and an Azure Synapse Analytics workspace named workspace1. You need to create an external table in a serverless SQL pool in workspace1. The external table will reference CSV files stored in account1. The solution must maximize performance. How should you configure the external table?
+
+- [x] Use a native external table and authenticate by using a shared access signature (SAS).
+- [ ] Use a native external table and authenticate by using a storage account key.
+- [ ] Use an Apache Hadoop external table and authenticate by using a shared access signature (SAS).
+- [ ] Use an Apache Hadoop external table and authenticate by using a service principal in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra.
+
+### HOTSPOT You have an Azure Synapse Analytics serverless SQL pool that contains a database named db1. The data model for db1 is shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the exhibit.
+
+![Question 173](images/question173.jpg)
+
+- [ ] Box 1: 6. Box 2: join DimGeography and FactOrders.
+- [ ] Box 1: 6. Box 2: join DimGeography and DimCustomer.
+- [x] Box 1: join DimGeography and DimCustomer. Box 2: 6.
+- [ ] Box 1: 6. Box 2: join DimGeography and FactOrders.
+
+### You have an Azure subscription that contains the resources shown in the following table. You need to read the TSV files by using ad-hoc queries and the OPENROWSET function. The solution must assign a name and override the inferred data type of each column. What should you include in the OPENROWSET function?
+
+- [x] the WITH clause
+- [ ] the ROWSET_OPTIONS bulk option
+- [ ] the DATAFILETYPE bulk option
+- [ ] the DATA_SOURCE parameter
+
+### You have an Azure Synapse Analytics dedicated SQL pool that contains a table named DimSalesPerson. DimSalesPerson contains the following columns: • RepSourceI • SalesRepID • FirstName • LastName • StartDate • EndDate • Region  You are developing an Azure Synapse Analytics pipeline that includes a mapping data flow named Dataflow1. Dataflow1 will read sales team data from an external source and use a Type 2 slowly changing dimension (SCD) when loading the data into DimSalesPerson.  You need to update the last name of a salesperson in DimSalesPerson.  Which two actions should you perform? Each correct answer presents part of the solution.
+
+- [ ] Update three columns of an existing row.
+- [ ] Update two columns of an existing row.
+- [x] Insert an extra row.
+- [x] Update one column of an existing row.
+
+### You plan to use an Azure Data Lake Storage Gen2 account to implement a Data Lake development environment that meets the following requirements: • Read and write access to data must be maintained if an availability zone becomes unavailable. • Data that was last modified more than two years ago must be deleted automatically. • Costs must be minimized. What should you configure? To answer, select the appropriate options in the answer area.
+
+![Question 174](images/question174.jpg)
+
+- [x] Box 1: Zone-redundant storage (ZRS). Box 2: A lifecycle management policy.
+- [ ] Box 1: Locally-redundant storage (LRS). Box 2: Zone-redundant storage (ZRS).
+- [ ] Box 1: A lifecycle management policy. Box 2: Zone-redundant storage (ZRS).
+- [ ] Box 1: A lifecycle management policy. Box 2:Locally-redundant storage (LRS) .
+
+### HOTSPOT You are developing an Azure Synapse Analytics pipeline that will include a mapping data flow named Dataflow1. Dataflow1 will read customer data from an external source and use a Type 1 slowly changing dimension (SCD) when loading the data into a table named DimCustomer in an Azure Synapse Analytics dedicated SQL pool. You need to ensure that Dataflow1 can perform the following tasks:• Detect whether the data of a given customer has changed in the DimCustomer table. • Perform an upsert to the DimCustomer table. Which type of transformation should you use for each task? To answer, select the appropriate options in the answer area.
+
+![Question 175](images/question175.jpg)
+
+- [ ] Box 1: Alter row. Box 2: Surrogate key.
+- [ ] Box 1: Surrogate key. Box 2: Alter row.
+- [x] Box 1: Derived column. Box 2: Alter row.
+- [ ] Box 1: Derived column. Box 2: Derived column.
+
+### DRAG DROP You have an Azure Synapse Analytics serverless SQL pool. You have an Azure Data Lake Storage account named adls1 that contains a public container named container1. The container1 container contains a folder named folder1. You need to query the top 100 rows of all the CSV files in folder1. How should you complete the query?
+
+![Question 176](images/question176.jpg)
+
+- [ ] Box 1: OPENROWSET. Box 2: BULK.
+- [ ] Box 1: BULK. Box 2: DATA_SOURCE.
+- [ ] Box 1: BULK. Box 2: DATA_SOURCE.
+- [ ] Box 1: DATA_SOURCE. Box 2: BULK.
+
+### You have an Azure Data Lake Storage Gen2 account named storage1. You plan to implement query acceleration for storage1. Which two file types support query acceleration? Each correct answer presents a complete solution.
+
+- [x] JSON
+- [ ] Apache Parquet
+- [ ] XML
+- [x] CSV
+- [ ] Avro
+
+### DRAG DROP You have a data warehouse. You need to implement a slowly changing dimension (SCD) named Product that will include three columns named ProductName, ProductColor, and ProductSize. The solution must meet the following requirements: • Prevent changes to the values stored in ProductName• Retain only the current and the last values in ProductSize. • Retain all the current and previous values in ProductColor. Which type of SCD should you implement for each column?
+
+![Question 177](images/question177.jpg)
+
+- [ ] Box 1: Type 0. Box 2: Type 1. Box 3: Type 2.
+- [ ] Box 1: Type 1. Box 2: Type 2. Box 3: Type 2.
+- [ ] Box 1: Type 2. Box 2: Type 0. Box 3: Type 0.
+- [ ] Box 1: Type 1. Box 2: Type 2. Box 3: Type 0.
+
+### HOTSPOT You are incrementally loading data into fact tables in an Azure Synapse Analytics dedicated SQL pool. Each batch of incoming data is staged before being loaded into the fact tables. You need to ensure that the incoming data is staged as quickly as possible. How should you configure the staging tables?
+
+![Question 178](images/question178.jpg)
+
+- [x] Box 1: ROUND_ROBIN. Box 2: Heap.
+- [ ] Box 1: ROUND_ROBIN. Box 2: Heap.
+- [ ] Box 1: HASH. Box 2: HASH.
+- [ ] Box 1: HASH. Box 2: ROUND_ROBIN.
