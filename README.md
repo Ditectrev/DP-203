@@ -205,18 +205,40 @@
 
 ### You need to implement a Type 3 slowly changing dimension (SCD) for product category data in an Azure Synapse Analytics dedicated SQL pool. You have a table that was created by using the following Transact-SQL statement. Which two columns should you add to the table?
 
-- [ ] [EffectiveScarcDate] [datetime] NOT NULL,
-- [x] [CurrentProduccCacegory] [nvarchar] (100) NOT NULL,
-- [ ] [EffectiveEndDace] [dacecime] NULL,
-- [ ] [ProductCategory] [nvarchar] (100) NOT NULL,
-- [x] [OriginalProduccCacegory] [nvarchar] (100) NOT NULL,
+![Question 31](images/question31.png)
 
-### You are designing a highly available Azure Data Lake Storage solution that will induce geo-zone-redundant storage (GZRS). You need to monitor for replication delays that can affect the recovery point objective (RPO).
+- [ ] `[EffectiveStartDate] [datetime] NOT NULL,`.
+- [x] `[CurrentProductCategory] [nvarchar] (100) NOT NULL,`.
+- [ ] `[EffectiveEndDate] [datetime] NULL,`.
+- [ ] `[ProductCategory] [nvarchar] (100) NOT NULL,`.
+- [x] `[OriginalProductCategory] [nvarchar] (100) NOT NULL,`.
 
-- [x] Last Sync Time
-- [ ] Average Success Latency
-- [ ] Error errors
-- [ ] availability
+### You are implementing a star schema in an Azure Synapse Analytics dedicated SQL pool. You plan to create a table named DimProduct. DimProduct must be a Type 3 slowly changing dimension (SCD) table that meets the following requirements: The values in two columns named ProductKey and ProductSourceID will remain the same. The values in three columns named ProductName, ProductDescription, and Color can change. You need to add additional columns to complete the following table definition. Which three columns should you add?
+
+![Question 32](images/question32.png)
+
+- [ ] `[EffectiveStartDate] [datetime] NOT NULL`.
+- [ ] `[EffectiveEndDate] [datetime] NOT NULL`.
+- [x] `[OriginalProductDescription] NVARCHAR(2000) NOT NULL`.
+- [ ] `[IsCurrentRow] [bit] NOT NULL`.
+- [x] `[OriginalColor] NVARCHAR(50) NOT NULL`.
+- [x] `[OriginalProductName] NVARCHAR(100) NULL`.
+
+### You are creating dimensions for a data warehouse in an Azure Synapse Analytics dedicated SQL pool. You create a table by using the Transact-SQL statement shown in the following exhibit.
+
+![Question 33](images/question33.jpg)
+
+- [x] DimProduct is a [...] slowly changing dimension (SCD): Type 2. The ProductKey column is [...]: a surrogate key.
+- [ ] DimProduct is a [...] slowly changing dimension (SCD): Type 0. The ProductKey column is [...]: a business key.
+- [ ] DimProduct is a [...] slowly changing dimension (SCD): Type 1. The ProductKey column is [...]: an audit column.
+- [ ] DimProduct is a [...] slowly changing dimension (SCD): Type 2. The ProductKey column is [...]: a business key.
+
+### You are designing a highly available Azure Data Lake Storage solution that will induce geo-zone-redundant storage (GZRS). You need to monitor for replication delays that can affect the recovery point objective (RPO). What should you include in the monitoring solution?
+
+- [x] Last Sync Time.
+- [ ] Average Success E2E Latency.
+- [ ] `5xx`: Server Error errors
+- [ ] Availability.
 
 ### You are monitoring an Azure Stream Analytics job. The Backlogged Input Events count has been 20 for the last hour. You need to reduce the Backlogged Input Events count. What should you do?
 
@@ -224,6 +246,13 @@
 - [ ] Add an Azure Storage account to the job.
 - [x] Increase the streaming units for the job.
 - [ ] Stop the job.
+
+### You are monitoring an Azure Stream Analytics job. You discover that the Backlogged Input Events metric is increasing slowly and is consistently non-zero. You need to ensure that the job can handle all the events. What should you do?
+
+- [ ] Change the compatibility level of the Stream Analytics job.
+- [x] Increase the number of streaming units (SUs).
+- [ ] Remove any named consumer groups from the connection and use `$default`.
+- [ ] Create an additional output stream for the existing input stream.
 
 ### You are building an Azure Stream Analytics job to identify how much time a user spends interacting with a feature on a webpage. The job receives events based on user actions on the webpage. Each row of data represents an event. Each event has a type of either ‘start’ or ‘end’. You need to calculate the duration between start and end events. How should you complete the query?
 
@@ -1008,15 +1037,6 @@
 - [x] Box 1: LAG. Box 2: LIMIT DURATION.
 - [ ] Box 1: OFFSET. Box 2: OFFSET.
 - [ ] Box 1: LAG. Box 2: LAG.
-
-### You are creating dimensions for a data warehouse in an Azure Synapse Analytics dedicated SQL pool. You create a table by using the Transact-SQL statement shown in the following exhibit.
-
-![Question 142](images/question142.jpg)
-
-- [ ] Box 1: Type 0. Box 2: Type 2.
-- [ ] Box 1: Type 0. Box 2: Type 2.
-- [ ] Box 1: a business key. Box 2: Type 0.
-- [x] Box 1: Type 2. Box 2: a business key.
 
 ### You use Azure Data Factory to prepare data to be queried by Azure Synapse Analytics serverless SQL pools. Files are initially ingested into an Azure Data Lake Storage Gen2 account as 10 small JSON files. Each file contains the same data attributes and data from a subsidiary of your company. You need to move the files to a different folder and transform the data to meet the following requirements: Provide the fastest possible query times. Automatically infer the schema from the underlying files. How should you configure the Data Factory copy activity?
 
