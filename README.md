@@ -65,7 +65,7 @@
 - [ ] `EXTERNAL TABLE access failed due to internal error: "Java exception raised on call to HdfsBridge_Connect: Error [com.microsoft.polybase.client.KerberosSecureLogin] occurred while accessing external files."`.
 - [ ] `EXTERNAL TABLE access failed due to internal error: Java exception raised on call to HdfsBridge_Connect: Error [No FileSystem for scheme: wasbs] occurred while accessing external file.`
 - [x] `Cannot execute the query "Remote Query" against OLE DB provider "SQLNCLI11": for linked server "(null)", Query aborted the maximum reject threshold (o rows) was reached while regarding from an external source: 1 rows rejected out of total 1 rows processed.`
-- [ ] `EXTERNAL TABLE access failed due to internal error: ‘Java exception raised on call to HdfsBridge_Connect: Error [Unable to instantiate LoginClass] occurred while accessing external files.`
+- [ ] `EXTERNAL TABLE access failed due to internal error: 'Java exception raised on call to HdfsBridge_Connect: Error [Unable to instantiate LoginClass] occurred while accessing external files.`
 
 ### You need to design a data storage structure for the product sales transactions. The solution must meet the sales transaction dataset requirements. What should you include in the solution? Table type to store the product sales transactions:
 
@@ -254,18 +254,18 @@
 - [ ] Remove any named consumer groups from the connection and use `$default`.
 - [ ] Create an additional output stream for the existing input stream.
 
-### You are building an Azure Stream Analytics job to identify how much time a user spends interacting with a feature on a webpage. The job receives events based on user actions on the webpage. Each row of data represents an event. Each event has a type of either ‘start’ or ‘end’. You need to calculate the duration between start and end events. How should you complete the query?
+### You are building an Azure Stream Analytics job to identify how much time a user spends interacting with a feature on a webpage. The job receives events based on user actions on the webpage. Each row of data represents an event. Each event has a type of either 'start' or 'end'. You need to calculate the duration between start and end events. How should you complete the query?
 
-![Question 92](images/question92.jpg)
+![Question 37](images/question37.jpg)
 
-- [ ] Box 1: DATEPART. Box 2: DATEADD.
-- [ ] Box 1: DATEDIFF. Box 2: LAST.
-- [ ] Box 1: DATEADD. Box 2: DATEPART.
-- [ ] Box 1: DATEADD. Box 2: DATEPART.
+- [ ] Box 1: DATEPART. Box 2: TOPONE.
+- [x] Box 1: DATEDIFF. Box 2: LAST.
+- [ ] Box 1: DATEADD. Box 2: LAST.
+- [ ] Box 1: DATEADD. Box 2: ISFIRST.
 
 ### You have the following table named Employees. You need to calculate the employee_type value based on the hire_date value. How should you complete the Transact-SQL statement?
 
-![Question 93](images/question93.jpg)
+![Question 38](images/question38.jpg)
 
 - [ ] Box 1: ELSE. Box 2: CASE.
 - [ ] Box 1: CASE. Box 2: OVER.
@@ -274,23 +274,23 @@
 
 ### You are building an Azure Stream Analytics job to retrieve game data. You need to ensure that the job returns the highest scoring record for each five-minute time interval of each game. How should you complete the Stream Analytics query?
 
-![Question 94](images/question94.jpg)
+![Question 39](images/question39.jpg)
 
-- [x] SELECT: TopOne OVER(PARTITION BY Game ORDER BY Score Desc). GROUP BY: Tumbling(minute, 5).
-- [ ] SELECT: CollectTop(1)OVER(ORDER BY Score Desc). GROUP BY: Tumbling(minute, 5).
-- [ ] SELECT: TopOne OVER(PARTITION BY Game ORDER BY Score Desc). GROUP BY: Game.
-- [ ] SELECT: CollectTop(1)OVER(ORDER BY Score Desc). GROUP BY: TopOne OVER(PARTITION BY Game ORDER BY Score Desc).
+- [x] SELECT: `TopOne OVER(PARTITION BY Game ORDER BY Score Desc)`. GROUP BY: `Tumbling(minute, 5)`.
+- [ ] SELECT: `CollectTop(1)OVER(ORDER BY Score Desc)`. `GROUP BY: Tumbling(minute, 5)`.
+- [ ] SELECT: `TopOne OVER(PARTITION BY Game ORDER BY Score Desc)`. `GROUP BY: Hopping(minute, 5)`.
+- [ ] SELECT: `CollectTop(1)OVER(ORDER BY Score Desc)`. GROUP BY: `Windows(TumblingWindow(minute,5),Hopping(minute,5))`.
 
 ### You need to design an analytical storage solution for the transactional data. The solution must meet the sales transaction dataset requirements. What should you include in the solution?
 
-![Question 95](images/question95.jpg)
+![Question 40](images/question40.jpg)
 
 - [ ] Table type to store retail store data: Hash. Table type to store promotional data: Round-robin.
-- [ ] Table type to store retail store data: Replicated. Table type to store promotional data: Round-robin.
+- [x] Table type to store retail store data: Replicated. Table type to store promotional data: Hash.
 - [ ] Table type to store retail store data: Hash. Table type to store promotional data: Replicated.
-- [x] Table type to store retail store data: Round-robin. Table type to store promotional data: Hash.
+- [ ] Table type to store retail store data: Round-robin. Table type to store promotional data: Hash.
 
-### You have files and folders in Azure Data Lake Storage Gen2 for an Azure Synapse workspace as shown in the following exhibit. You create an external table named ExtTable that has LOCATION=’/topfolder/’. When you query ExtTable by using an Azure Synapse Analytics serverless SQL pool, which files are returned?
+### You have files and folders in Azure Data Lake Storage Gen2 for an Azure Synapse workspace as shown in the following exhibit. You create an external table named ExtTable that has LOCATION='/topfolder/'. When you query ExtTable by using an Azure Synapse Analytics serverless SQL pool, which files are returned?
 
 - [ ] File2.csv and File3.csv only
 - [x] File1.csv and File4.csv only
@@ -933,7 +933,7 @@
 - [ ] Box 1: DATEDIFF. Box 2: MAX. Box 3: TumblingWindow.
 - [x] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF.
 
-### You plan to create an Azure Synapse Analytics dedicated SQL pool. You need to minimize the time it takes to identify queries that return confidential information as defined by the company’s data privacy regulations and the users who executed the queues. Which two components should you include in the solution?
+### You plan to create an Azure Synapse Analytics dedicated SQL pool. You need to minimize the time it takes to identify queries that return confidential information as defined by the company's data privacy regulations and the users who executed the queues. Which two components should you include in the solution?
 
 - [x] sensitivity-classification labels applied to columns that contain confidential information.
 - [ ] resource tags for databases that contain confidential information.
@@ -1089,7 +1089,7 @@
 - [ ] Box 1: Microsoft Power BI. Box 2: Azure Event Hub!. Box 3: Azure Event Hub!.
 - [x] Box 1: Azure Event Hub!. Box 2: Microsoft Power BI. Box 3: Azure Stream Analytics.
 
-### You have an Azure Synapse workspace named MyWorkspace that contains an Apache Spark database named mytestdb. You run the following command in an Azure Synapse Analytics Spark pool in MyWorkspace. CREATE TABLE mytestdb.myParquetTable( EmployeeID int, EmployeeName string, EmployeeStartDate date) USING Parquet You then use Spark to insert a row into mytestdb.myParquetTable. The row contains the following data. One minute later, you execute the following query from a serverless SQL pool in MyWorkspace. SELECT EmployeeID FROM mytestdb.dbo.myParquetTable WHERE name = ‘Alice’; What will be returned by the query?
+### You have an Azure Synapse workspace named MyWorkspace that contains an Apache Spark database named mytestdb. You run the following command in an Azure Synapse Analytics Spark pool in MyWorkspace. CREATE TABLE mytestdb.myParquetTable( EmployeeID int, EmployeeName string, EmployeeStartDate date) USING Parquet You then use Spark to insert a row into mytestdb.myParquetTable. The row contains the following data. One minute later, you execute the following query from a serverless SQL pool in MyWorkspace. SELECT EmployeeID FROM mytestdb.dbo.myParquetTable WHERE name = 'Alice'; What will be returned by the query?
 
 - [x] 24
 - [ ] an error
@@ -1256,7 +1256,7 @@
 - [ ] COPY INTO
 - [x] Azure Data Factory
 
-### You have a table in an Azure Synapse Analytics dedicated SQL pool. The table was created by using the following Transact-SQL statement. You need to alter the table to meet the following requirements: Ensure that users can identify the current manager of employees. Support creating an employee reporting hierarchy for your entire company. Provide fast lookup of the managers’ attributes such as name and job title. Which column should you add to the table?
+### You have a table in an Azure Synapse Analytics dedicated SQL pool. The table was created by using the following Transact-SQL statement. You need to alter the table to meet the following requirements: Ensure that users can identify the current manager of employees. Support creating an employee reporting hierarchy for your entire company. Provide fast lookup of the managers' attributes such as name and job title. Which column should you add to the table?
 
 - [ ] [ManagerEmployeeID] [int] NULL
 - [ ] [ManagerEmployeeID] [smallint] NULL
