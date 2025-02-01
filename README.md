@@ -135,7 +135,6 @@
 - [ ] `/{YYYY}/{MM}/{DD}/{SubjectArea}/{DataSource}/{FileData}_{YYYY}_{MM}_{DD}.csv`.
 - [x] `/{SubjectArea}/{DataSource}/{YYYY}/{MM}/{DD}/{FileData}_{YYYY}_{MM}_{DD}.csv`.
 
-
 ### You are designing the folder structure for an Azure Data Lake Storage Gen2 account. You identify the following usage patterns: Users will query data by using Azure Synapse Analytics serverless SQL pools and Azure Synapse Analytics serverless Apache Spark pools. Most queries will include a filter on the current year or week.Data will be secured by data source. You need to recommend a folder structure that meets the following requirements: Supports the usage pattern. Simplifies folder security. Minimizes query times. Which folder structure should you recommend?
 
 - [x] `\DataSource\SubjectArea\YYYY\WW\FileData_YYYY_MM_DD.parquet`.
@@ -290,7 +289,7 @@
 - [ ] Table type to store retail store data: Hash. Table type to store promotional data: Replicated.
 - [ ] Table type to store retail store data: Round-robin. Table type to store promotional data: Hash.
 
-### You have files and folders in Azure Data Lake Storage Gen2 for an Azure Synapse workspace as shown in the following exhibit. You create an external table named ExtTable that has LOCATION='/topfolder/'. When you query ExtTable by using an Azure Synapse Analytics serverless SQL pool, which files are returned?
+### You have files and folders in Azure Data Lake Storage Gen2 for an Azure Synapse workspace as shown in the following exhibit. You create an external table named `ExtTable` that has `LOCATION='/topfolder/'`. When you query ExtTable by using an Azure Synapse Analytics serverless SQL pool, which files are returned?
 
 ![Question 41](images/question41.png)
 
@@ -301,21 +300,28 @@
 
 ### You build a data warehouse in an Azure Synapse Analytics dedicated SQL pool. Analysts write a complex SELECT query that contains multiple JOIN and CASE statements to transform data for use in inventory reports. The inventory reports will use the data and additional WHERE parameters depending on the report. The reports will be produced once daily. You need to implement a solution to make the dataset available for the reports. The solution must minimize query times. What should you implement?
 
-- [x] a materialized view.
-- [ ] a replicated table.
-- [ ] in ordered clustered columnstore index.
-- [ ] result set chaching.
+- [x] Materialized view.
+- [ ] Replicated table.
+- [ ] In ordered clustered columnstore index.
+- [ ] Result set chaching.
 
 ### You are designing an Azure Synapse Analytics dedicated SQL pool. You need to ensure that you can audit access to Personally Identifiable information (PII). What should you include in the solution?
 
-- [ ] dynamic data masking.
-- [ ] row-level security (RLS).
-- [x] sensitivity classifications.
-- [ ] column-level security.
+- [ ] Dynamic data masking.
+- [ ] Row-level security (RLS).
+- [x] Sensitivity classifications.
+- [ ] Column-level security.
+
+### You plan to create an Azure Synapse Analytics dedicated SQL pool. You need to minimize the time it takes to identify queries that return confidential information as defined by the company's data privacy regulations and the users who executed the queues. Which two components should you include in the solution?
+
+- [x] Sensitivity-classification labels applied to columns that contain confidential information.
+- [ ] Resource tags for databases that contain confidential information.
+- [x] Audit logs sent to a Log Analytics workspace.
+- [ ] Dynamic data masking for columns that contain confidential information.
 
 ### You plan to create a table in an Azure Synapse Analytics dedicated SQL pool. Data in the table will be retained for five years. Once a year, data that is older than five years will be deleted. You need to ensure that the data is distributed evenly across partitions. The solution must minimize the amount of time required to delete old data. How should you complete the Transact-SQL statement?
 
-![Question 96](images/question96.jpg)
+![Question 45](images/question45.jpg)
 
 - [x] Box 1: HASH. Box 2: OrderDateKey.
 - [ ] Box 1: OrderDateKey. Box 2: CustomerKey.
@@ -324,25 +330,39 @@
 
 ### You use Azure Stream Analytics to receive Twitter data from Azure Event Hubs and to output the data to an Azure Blob storage account. You need to output the count of tweets during the last five minutes every five minutes. Each tweet must only be counted once. Which windowing function should you use?
 
-- [ ] a five-minute Session window.
-- [ ] a five-minute Sliding window.
-- [x] a five-minute Tumbling window.
-- [ ] a five-minute Hopping window that has one-minute hop.
+- [ ] Five-minute Session window.
+- [ ] Five-minute Sliding window.
+- [x] Five-minute Tumbling window.
+- [ ] Five-minute Hopping window that has one-minute hop.
+
+### You use Azure Stream Analytics to receive data from Azure Event Hubs and to output the data to an Azure Blob Storage account. You need to output the count of records received from the last five minutes every minute. Which windowing function should you use?
+
+- [ ] Session.
+- [ ] Tumbling.
+- [ ] Sliding.
+- [x] Hopping.
 
 ### What should you recommend using to secure sensitive customer contact information?
 
-- [ ] data labels.
-- [x] column-level security.
-- [ ] row-level security.
+- [ ] Data labels.
+- [x] Column-level security.
+- [ ] Row-level security.
 - [ ] Transparent Data Encryption (TDE).
 
-### You are designing a security model for an Azure Synapse Analytics dedicated SQL pool that will support multiple companies. You need to ensure that users from each company can view only the data of their respective company . Which two objects should you include in the solution? 
+### You have an Azure Synapse Analytics dedicated SQL pool mat contains a table named `dbo.Users`. You need to prevent a group of users from reading user email addresses from `dbo.Users`. What should you use?
 
-- [ ] a custom role-based access control (RBAC) role.
-- [ ] asymmetric keys.
-- [x] a predicate function.
-- [ ] a column encryption key.
-- [x] a security policy.
+- [ ] Row-level security (RLS).
+- [x] Column-level security.
+- [ ] Dynamic data masking.
+- [ ] Transparent Data Encryption (TDE).
+
+### You are designing a security model for an Azure Synapse Analytics dedicated SQL pool that will support multiple companies. You need to ensure that users from each company can view only the data of their respective company. Which two objects should you include in the solution?
+
+- [ ] Custom role-based access control (RBAC) role.
+- [ ] Asymmetric keys.
+- [x] Predicate function.
+- [ ] Column encryption key.
+- [x] Security policy.
 
 ### You need to design the partitions for the product sales transactions. The solution must meet the sales transaction dataset requirements. What should you include in the solution?
 
@@ -382,7 +402,7 @@
 - [ ] Include a watermark column.
 - [ ] Use a JSON format for physical data storage.
 
-### CORRECT TEXT The storage account container view is shown in the Refdata exhibit. (Click the Refdata tab.) You need to configure the Stream Analytics job to pick up the new reference data . What should you configure?
+### CORRECT TEXT The storage account container view is shown in the Refdata exhibit. (Click the Refdata tab.) You need to configure the Stream Analytics job to pick up the new reference data. What should you configure?
 
 ![Question 100](images/question100.jpg)
 
@@ -829,10 +849,10 @@
 
 ![Question 128](images/question128.jpg)
 
-- [ ] Box 1: Read the file into a data frame. Box 2: Write the results to a table in Azure Synapse. Box 3: Write the results to a table in Azure Synapse. Box 4: Mount the Data Lake Storage onto DBFS. Box 5: Mount the Data Lake Storage onto DBFS. 
-- [ ] Box 1: Perform transformations on the data frame. Box 2: Write the results to a table in Azure Synapse. Box 3: Mount the Data Lake Storage onto DBFS. Box 4: Specify a temporary folder to stage the data. Box 5: Perform transformations on the data frame. 
-- [x] Box 1: Mount the Data Lake Storage onto DBFS. Box 2: Read the file into a data frame. Box 3: Perform transformations on the data frame. Box 4: Specify a temporary folder to stage the data. Box 5: Write the results to a table in Azure Synapse. 
-- [ ] Box 1: Perform transformations on the data frame. Box 2: Read the file into a data frame. Box 3: Write the results to a table in Azure Synapse. Box 4: Specify a temporary folder to stage the data. Box 5: Mount the Data Lake Storage onto DBFS. 
+- [ ] Box 1: Read the file into a data frame. Box 2: Write the results to a table in Azure Synapse. Box 3: Write the results to a table in Azure Synapse. Box 4: Mount the Data Lake Storage onto DBFS. Box 5: Mount the Data Lake Storage onto DBFS.
+- [ ] Box 1: Perform transformations on the data frame. Box 2: Write the results to a table in Azure Synapse. Box 3: Mount the Data Lake Storage onto DBFS. Box 4: Specify a temporary folder to stage the data. Box 5: Perform transformations on the data frame.
+- [x] Box 1: Mount the Data Lake Storage onto DBFS. Box 2: Read the file into a data frame. Box 3: Perform transformations on the data frame. Box 4: Specify a temporary folder to stage the data. Box 5: Write the results to a table in Azure Synapse.
+- [ ] Box 1: Perform transformations on the data frame. Box 2: Read the file into a data frame. Box 3: Write the results to a table in Azure Synapse. Box 4: Specify a temporary folder to stage the data. Box 5: Mount the Data Lake Storage onto DBFS.
 
 ### You have an Azure event hub named retailhub that has 16 partitions. Transactions are posted to retailhub. Each transaction includes the transaction ID, the individual line items, and the payment details. The transaction ID is used as the partition key. You are designing an Azure Stream Analytics job to identify potentially fraudulent transactions at a retail store. The job will use retailhub as the input. The job will output the transaction ID, the individual line items, the payment details, a fraud score, and a fraud indicator. You plan to send the output to an Azure event hub named fraudhub. You need to ensure that the fraud detection solution is highly scalable and processes transactions as quickly as possible. How should you structure the output of the Stream Analytics job?
 
@@ -934,13 +954,6 @@
 - [ ] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF.
 - [ ] Box 1: DATEDIFF. Box 2: MAX. Box 3: TumblingWindow.
 - [x] Box 1: MAX. Box 2: TumblingWindow. Box 3: DATEDIFF.
-
-### You plan to create an Azure Synapse Analytics dedicated SQL pool. You need to minimize the time it takes to identify queries that return confidential information as defined by the company's data privacy regulations and the users who executed the queues. Which two components should you include in the solution?
-
-- [x] sensitivity-classification labels applied to columns that contain confidential information.
-- [ ] resource tags for databases that contain confidential information.
-- [x] audit logs sent to a Log Analytics workspace.
-- [ ] dynamic data masking for columns that contain confidential information.
 
 ### You are implementing Azure Stream Analytics windowing functions. Which windowing function should you use for each requirement?
 
@@ -1512,13 +1525,6 @@
 - [ ] All CSV files that have file names that contain "tripdata_2020".
 - [x] Only CSV that have file names that beginning with "tripdata_2020".
 
-### You have an Azure Synapse Analytics dedicated SQL pool mat contains a table named dbo.Users. You need to prevent a group of users from reading user email addresses from dbo.Users. What should you use?
-
-- [ ] row-level security
-- [x] column-level security
-- [ ] Dynamic data masking
-- [ ] Transparent Data Encryption (TDD
-
 ### You have two Azure SQL databases named DB1 and DB2. DB1 contains a table named Table 1. Table1 contains a timestamp column named LastModifiedOn. LastModifiedOn contains the timestamp of the most recent update for each individual row. DB2 contains a table named Watermark. Watermark contains a single timestamp column named WatermarkValue. You plan to create an Azure Data Factory pipeline that will incrementally upload into Azure Blob Storage all the rows in Table1 for which the LastModifiedOn column contains a timestamp newer than the most recent value of the WatermarkValue column in Watermark. You need to identify which activities to include in the pipeline. The solution must meet the following requirements: Minimize the effort to author the pipeline. Ensure that the number of data integration units allocated to the upload operation can be controlled. What should you identify?
 
 ![Question 160](images/question160.jpg)
@@ -1760,7 +1766,7 @@
 - [x] Yes.
 - [ ] No.
 
-### You have an Azure Data Lake Storage Gen2 container that contains 100 TB of data. You need to ensure that the data in the container is available for read workloads in a secondary region if an outage occurs in the primary region. The solution must minimize costs . Which type of data redundancy should you use?
+### You have an Azure Data Lake Storage Gen2 container that contains 100 TB of data. You need to ensure that the data in the container is available for read workloads in a secondary region if an outage occurs in the primary region. The solution must minimize costs. Which type of data redundancy should you use?
 
 - [ ] zone-redundant storage (ZRS).
 - [ ] read-access geo-redundant storage (RA-GRS).
