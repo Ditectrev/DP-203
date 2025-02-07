@@ -76,8 +76,8 @@
 ### You need to design a data storage structure for the product sales transactions. The solution must meet the sales transaction dataset requirements. What should you include in the solution? When creating the table for sales transactions:
 
 - [ ] Configure a clustered index.
-- [x] Set the distribution column to the sales date.
-- [ ] Set the distribution column to product ID.
+- [ ] Set the distribution column to the sales date.
+- [x] Set the distribution column to product ID.
 
 ### You need to implement an Azure Synapse Analytics database object for storing the sales transactions data. The solution must meet the sales transaction dataset requirements. What should you do? Transact-SQL DDL command to use:
 
@@ -366,52 +366,54 @@
 
 ### You need to design the partitions for the product sales transactions. The solution must meet the sales transaction dataset requirements. What should you include in the solution?
 
-![Question 98](images/question98.jpg)
+![Question 51](images/question51.jpg)
 
-- [ ] Box 1: An Azure Synapse Analytics dedicated SQL pool. Box 2: Promotion ID.
-- [x] Box 1: Sales date. Box 2: An Azure Synapse Analytics dedicated SQL pool.
-- [ ] Box 1: An Azure Synapse Analytics dedicated SQL pool. Box 2: Promotion ID.
-- [ ] Box 1: Promotion ID. Box 2: Sales date.
+- [ ] Partition product sales transactions data by: Promotion ID. Store product sales transactions data in: An Azure Synapse Analytics serverless SQL pool.
+- [x] Partition product sales transactions data by: Sales date. Store product sales transactions data in: An Azure Synapse Analytics dedicated SQL pool.
+- [ ] Partition product sales transactions data by: Product ID. Store product sales transactions data in: An Azure Synapse Analytics serverless SQL pool.
+- [ ] Partition product sales transactions data by: Promotion ID. Store product sales transactions data in: An Azure Data Lake Storage Gen2 account linked.
 
-### You need to integrate the on-premises data sources and Azure Synapse Analytics. The solution must meet the data integration requirements. Which type of integration runtime should you use?
+### You have an Azure Storage account and a data warehouse in Azure Synapse Analytics in the UK South region. You need to copy blob data from the storage account to the data warehouse by using Azure Data Factory. The solution must meet the following requirements: Ensure that the data remains in the UK South region at all times. Minimize administrative effort. Which type of integration runtime should you use?
 
-- [ ] Azure-SSIS integration runtime.
-- [ ] self-hosted integration runtime.
 - [x] Azure integration runtime.
+- [ ] Azure-SSIS integration runtime.
+- [ ] Self-hosted integration runtime.
 
 ### You have an Azure SQL database named Database1 and two Azure event hubs named HubA and HubB. The data consumed from each source is shown in the following table. You need to implement Azure Stream Analytics to calculate the average fare per mile by driver. How should you configure the Stream Analytics input for each source?
 
-![Question 99](images/question99.jpg)
+![Question 53 part 1](images/question53_1.png)
+![Question 53 part 2](images/question53_2.png)
 
 - [ ] HubA: Reference. HubB: Stream. Databasel: Stream.
 - [ ] HubA: Reference. HubB: Reference. Databasel: Stream.
 - [x] HubA: Stream. HubB: Stream. Databasel: Reference.
-- [ ] HubA: Reference. HubB: Stream. Databasel: Stream.
+- [ ] HubA: Reference. HubB: Stream. Databasel: Reference.
 
 ### You create an Azure Databricks cluster and specify an additional library to install. When you attempt to load the library to a notebook, the library in not found. You need to identify the cause of the issue. What should you review?
 
-- [ ] notebook logs.
-- [x] cluster event logs.
-- [ ] global init scripts logs.
-- [ ] workspace logs.
+- [ ] Notebook logs.
+- [x] Cluster event logs.
+- [ ] Global init scripts logs.
+- [ ] Workspace logs.
 
 ### You are designing an Azure Databricks table. The table will ingest an average of 20 million streaming events per day. You need to persist the events in the table for use in incremental load pipeline jobs in Azure Databricks. The solution must minimize storage costs and incremental load times. What should you include in the solution?
 
-- [ ] Partition by `DateTime` fields.
-- [x] Sink to Azure Queue storage.
+- [x] Partition by `DateTime` fields.
+- [ ] Sink to Azure Queue storage.
 - [ ] Include a watermark column.
 - [ ] Use a JSON format for physical data storage.
 
-### CORRECT TEXT The storage account container view is shown in the Refdata exhibit. (Click the Refdata tab.) You need to configure the Stream Analytics job to pick up the new reference data. What should you configure?
+### You are building an Azure Stream Analytics job that queries reference data from a product catalog file. The file is updated daily. The reference data input details for the file are shown in the Input exhibit. The storage account container view is shown in the Refdata exhibit. You need to configure the Stream Analytics job to pick up the new reference data. What should you configure?
 
-![Question 100](images/question100.jpg)
+![Question 56 part 1](images/question56_1.png)
+![Question 56 part 2](images/question56_2.jpg)
 
-- [x] box 1: {date)/product.csv. Box 2: YYYY-MM-DD.
-- [ ] box 1: product.csv. Box 2: YYYY/MM/DD.
-- [ ] box 1: {date)/product.csv. Box 2: YYYY/MM/DD.
-- [ ] box 1: product.csv. Box 2: {date)/product.csv.
+- [x] Path pattern: {date}/product.csv. Date format: YYYY-MM-DD.
+- [ ] Path pattern: product.csv. Date format: YYYY/MM/DD.
+- [ ] Path pattern: {date}/product.csv. Date format: YYYY/MM/DD.
+- [ ] Path pattern: */product.csv. Date format: YYYY/MM/DD.
 
-### You are designing a solution that will copy Parquet files stored in an Azure Blob storage account to an Azure Data Lake Storage Gen2 account. The data will be loaded daily to the data lake and will use a folder structure of {Year}/{Month}/{Day}/. You need to design a daily Azure Data Factory data load to minimize the data transfer between the two accounts. Which two configurations should you include in the design?
+### You are designing a solution that will copy Parquet files stored in an Azure Blob storage account to an Azure Data Lake Storage Gen2 account. The data will be loaded daily to the data lake and will use a folder structure of `{Year}/{Month}/{Day}/`. You need to design a daily Azure Data Factory data load to minimize the data transfer between the two accounts. Which two configurations should you include in the design?
 
 - [ ] Delete the files in the destination before loading new data.
 - [x] Filter by the last modified date of the source files.
@@ -420,30 +422,37 @@
 
 ### You have an Azure Synapse Analytics workspace named WS1. You have an Azure Data Lake Storage Gen2 container that contains JSON-formatted files in the following format. You need to use the serverless SQL pool in WS1 to read the files. How should you complete the Transact-SQL statement?
 
-![Question 101](images/question101.jpg)
+![Question 58](images/question58.png)
 
-- [x] Box 1: openrowset. Box 2: openjson.
-- [ ] Box 1: openquezy. Box 2: openrowset.
-- [ ] Box 1: openjson. Box 2: openrowset.
-- [ ] Box 1: openquezy. Box 2: openrowset.
+- [x] Box 1: `openrowset`. Box 2: `openjson`.
+- [ ] Box 1: `openquery`. Box 2: `openrowset`.
+- [ ] Box 1: `openjson`. Box 2: `opendatasource`.
+- [ ] Box 1: `openquery`. Box 2: `openrowset`.
 
 ### You need to implement an Azure Databricks cluster that automatically connects to Azure Data lake Storage Gen2 by using Azure Active Directory (Azure AD) integration . How should you configure the new clutter?
 
-![Question 102](images/question102.jpg)
+![Question 59](images/question59.png)
 
-- [ ] Box 1: Premium. Box 2: Standara.
-- [ ] Box 1: Standara. Box 2: Table Access Gentrol.
-- [x] Box 1: Premium. Box 2: Azure Data Lake Storage Credential Passtrough .
-- [ ] Box 1: Standara. Box 2: Premium.
+- [ ] Tier: Premium. Advanced option to enable: Table Access Gentrol.
+- [ ] Tier: Standard. Advanced option to enable: Table Access Gentrol.
+- [x] Tier: Premium. Advanced option to enable: Azure Data Lake Storage Credential Passthrough.
+- [ ] Tier: Standard. Advanced option to enable: Azure Data Lake Storage Credential Passthrough.
 
 ### You plan to create a real-time monitoring app that alerts users when a device travels more than 200 meters away from a designated location. You need to design an Azure Stream Analytics job to process the data for the planned app. The solution must minimize the amount of code developed and the number of technologies used. What should you include in the Stream Analytics job?
 
-![Question 103](images/question103.jpg)
+![Question 60](images/question60.jpg)
 
-- [ ] Box 1: Reference. Box 2: Windowing.
-- [x] Box 1: Stream. Box 2: Geospatial.
-- [ ] Box 1: Reference. Box 2: Stream.
-- [ ] Box 1: Geospatial. Box 2: Stream.
+- [ ] Input type: Reference. Function: Windowing.
+- [x] Input type: Stream. Function: Geospatial.
+- [ ] Input type: Reference. Function: Geospatial.
+- [ ] Input type: Stream. Function: Aggregate.
+
+### You have an Azure Synapse Analytics workspace named WS1 that contains an Apache Spark pool named Pool1. You plan to create a database named D61 in Pool1. You need to ensure that when tables are created in DB1, the tables are available automatically as external tables to the built-in serverless SQL pod. Which format should you use for the tables in DB1?
+
+- [x] Parquet.
+- [ ] CSV.
+- [ ] ORC.
+- [ ] JSON.
 
 ### You have a self-hosted integration runtime in Azure Data Factory. The current status of the integration runtime has the following configurations: Status: Running Type: Self-Hosted Version: 4.4.7292.1 Running / Registered Node(s): 1/1 High Availability Enabled: False Linked Count: 0 Queue Length: 0 Average Queue Duration. 0.00s The integration runtime has the following node details: Name: X-M Status: Running Version: 4.4.7292.1 Available Memory: 7697MB CPU Utilization: 6% Network (In/Out): 1.21KBps/0.83KBps Concurrent Jobs (Running/Limit): 2/14 Role: Dispatcher/Worker Credential Status: In Sync Use the drop-down menus to select the answer choice that completes each statement based on the information presented.
 
@@ -618,7 +627,7 @@
 - [ ] Box 1: GZip. Box 2: Parquet.
 - [ ] Box 1: Avro. Box 2: Parquet.
 
-### CORRECT TEXT You plan to create an Azure Data Lake Storage Gen2 account You need to recommend a storage solution that meets the following requirements: Provides the highest degree of data resiliency Ensures that content remains available for writes if a primary data center fails What should you include in the recommendation?
+### You plan to create an Azure Data Lake Storage Gen2 account You need to recommend a storage solution that meets the following requirements: Provides the highest degree of data resiliency Ensures that content remains available for writes if a primary data center fails What should you include in the recommendation?
 
 ![Question 115](images/question115.jpg)
 
@@ -641,7 +650,7 @@
 - [x] Yes.
 - [ ] No.
 
-### CORRECT TEXT You are designing an Azure Data Lake Storage Gen2 container to store data for the human resources (HR) department and the operations department at your company. You have the following data access requirements: After initial processing, the HR department data will be retained for seven years. The operations department data will be accessed frequently for the first six months, and then accessed once per month. You need to design a data retention solution to meet the access requirements. The solution must minimize storage costs.
+### You are designing an Azure Data Lake Storage Gen2 container to store data for the human resources (HR) department and the operations department at your company. You have the following data access requirements: After initial processing, the HR department data will be retained for seven years. The operations department data will be accessed frequently for the first six months, and then accessed once per month. You need to design a data retention solution to meet the access requirements. The solution must minimize storage costs.
 
 ![Question 117](images/question117.jpg)
 
@@ -763,7 +772,7 @@
 - [ ] Yes.
 - [x] No.
 
-### CORRECT TEXT You are designing an application that will use an Azure Data Lake Storage Gen 2 account to store petabytes of license plate photos from toll booths. The account will use zone-redundant storage (ZRS). You identify the following usage patterns: The data will be accessed several times a day during the first 30 days after the data is created. The data must meet an availability SU of 99.9%. After 90 days, the data will be accessed infrequently but must be available within 30 seconds. After 365 days, the data will be accessed infrequently but must be available within five minutes.
+### You are designing an application that will use an Azure Data Lake Storage Gen 2 account to store petabytes of license plate photos from toll booths. The account will use zone-redundant storage (ZRS). You identify the following usage patterns: The data will be accessed several times a day during the first 30 days after the data is created. The data must meet an availability SU of 99.9%. After 90 days, the data will be accessed infrequently but must be available within 30 seconds. After 365 days, the data will be accessed infrequently but must be available within five minutes.
 
 ![Question 123](images/question123.jpg)
 
@@ -1009,12 +1018,6 @@
 - [x] Associate each cloned pipeline to an existing trigger.
 - [ ] Create a tumbling window trigger dependency for the trigger of PL1.
 - [ ] Modify the Concurrency setting of each pipeline.
-
-### You have an Azure Storage account and a data warehouse in Azure Synapse Analytics in the UK South region. You need to copy blob data from the storage account to the data warehouse by using Azure Data Factory. The solution must meet the following requirements: Ensure that the data remains in the UK South region at all times. Minimize administrative effort. Which type of integration runtime should you use?
-
-- [x] Azure integration runtime.
-- [ ] Azure-SSIS integration runtime.
-- [ ] Self-hosted integration runtime.
 
 ### You are designing a streaming data solution that will ingest variable volumes of data. You need to ensure that you can change the partition count after creation. Which service should you use to ingest the data?
 
@@ -1456,7 +1459,7 @@
 - [x] Create an external table mat contains a subset of columns from the Parquet files.
 - [ ] Use Snappy compression for the files.
 
-### CORRECT TEXT You have an Azure Data Factory pipeline that contains a data flow. The data flow contains the following expression.
+### You have an Azure Data Factory pipeline that contains a data flow. The data flow contains the following expression.
 
 ![Question 158](images/question158.jpg)
 
@@ -1533,13 +1536,6 @@
 - [ ] Box 1: Copy data. Box 2: Filter.
 - [x] Box 1: Lookup. Box 2: Copy data.
 - [ ] Box 1: Lookup. Box 2: Lookup.
-
-### You have an Azure Synapse Analytics workspace named WS1 that contains an Apache Spark pool named Pool1. You plan to create a database named D61 in Pool1. You need to ensure that when tables are created in DB1, the tables are available automatically as external tables to the built-in serverless SQL pod. Which format should you use for the tables in DB1?
-
-- [x] Parquet.
-- [ ] CSV.
-- [ ] ORC.
-- [ ] JSON.
 
 ### You have a Microsoft Purview account. The Lineage view of a CSV file is shown in the following exhibit. How is the data for the lineage populated?
 
