@@ -454,14 +454,14 @@
 - [ ] ORC.
 - [ ] JSON.
 
-### You have a self-hosted integration runtime in Azure Data Factory. The current status of the integration runtime has the following configurations: Status: Running Type: Self-Hosted Version: 4.4.7292.1 Running / Registered Node(s): 1/1 High Availability Enabled: False Linked Count: 0 Queue Length: 0 Average Queue Duration. 0.00s The integration runtime has the following node details: Name: X-M Status: Running Version: 4.4.7292.1 Available Memory: 7697MB CPU Utilization: 6% Network (In/Out): 1.21KBps/0.83KBps Concurrent Jobs (Running/Limit): 2/14 Role: Dispatcher/Worker Credential Status: In Sync Use the drop-down menus to select the answer choice that completes each statement based on the information presented.
+### You have a self-hosted integration runtime in Azure Data Factory. The current status of the integration runtime has the following configurations: Status: Running Type: Self-Hosted Version: 4.4.7292.1 Running / Registered Node(s): 1/1 High Availability Enabled: False Linked Count: 0 Queue Length: 0 Average Queue Duration. 0.00s The integration runtime has the following node details: Name: X-M Status: Running Version: 4.4.7292.1 Available Memory: 7697MB CPU Utilization: 6% Network (In/Out): 1.21KBps/0.83KBps Concurrent Jobs (Running/Limit): 2/14 Role: Dispatcher/Worker Credential Status.
 
-![Question 104](images/question104.jpg)
+![Question 62](images/question62.jpg)
 
-- [ ] Box 1: lowered. Box 2: fail until the node comes back online.
-- [ ] Box 1: raised. Box 2: fail until the node comes back online.
-- [ ] Box 1: exceed the CPU limit. Box 2: raised.
-- [ ] Box 1: fail until the node comes back online. Box 2: lowered.
+- [ ] If the X-M node becomes unavailable, all executed pipelines will be: switch to another integration runtime. Box 2: left as is.
+- [ ] If the X-M node becomes unavailable, all executed pipelines will be: exceed the CPU limit. Box 2: left as is.
+- [ ] If the X-M node becomes unavailable, all executed pipelines will be: fail until the node comes back online. Box 2: raised.
+- [x] If the X-M node becomes unavailable, all executed pipelines will be: fail until the node comes back online. Box 2: lowered.
 
 ### You are designing an Azure Databricks interactive cluster. The cluster will be used infrequently and will be configured for auto-termination. You need to ensure that the cluster configuration is retained indefinitely after the cluster is terminated. The solution must minimize costs. What should you do?
 
@@ -473,9 +473,9 @@
 ### You are developing an application that uses Azure Data Lake Storage Gen 2. You need to recommend a solution to grant permissions to a specific application for a limited time period. What should you include in the recommendation?
 
 - [ ] Azure Active Directory (Azure AD) identities.
-- [x] shared access signatures (SAS).
-- [ ] account keys.
-- [ ] role assignments.
+- [x] Shared Access Signatures (SAS).
+- [ ] Account keys.
+- [ ] Role assignments.
 
 ### You have two Azure Data Factory instances named ADFdev and ADFprod. ADFdev connects to an Azure DevOps Git repository. You publish changes from the main branch of the Git repository to ADFdev. You need to deploy the artifacts from ADFdev to ADFprod. What should you do first?
 
@@ -486,12 +486,12 @@
 
 ### You develop a dataset named DBTBL1 by using Azure Databricks. DBTBL1 contains the following columns: SensorTypeID GeographyRegionID Year Month Day HourMinute Temperature WindSpeed Other You need to store the data to support daily incremental load pipelines that vary for each GeographyRegionID. The solution must minimize storage costs. How should you complete the code?
 
-![Question 105](images/question105.jpg)
+![Question 66](images/question66.jpg)
 
-- [x] Box 1: partitionBy. Box 2: ("Year", "Month", "Day", "GeographyRegionID"). Box 3: .saveAsTable(*/DBTBL1").
-- [ ] Box 1: .saveAsTable(*/DBTBL1"). Box 2: partitionBy. Box 3: ("Year", "Month", "Day", "GeographyRegionID").
-- [ ] Box 1: .saveAsTable(*/DBTBL1"). Box 2: format. Box 3: partitionBy.
-- [ ] Box 1: ("Year", "Month", "Day", "GeographyRegionID"). Box 2: partitionBy. Box 3: format.
+- [ ] Box 1: `.partitionBy`. Box 2: `("Year", "Month", "Day", "GeographyRegionID")`. Box 3: `.saveAsTable(*/DBTBL1")`.
+- [x] Box 1: `.partitionBy`. Box 2: `("GeographyRegionID", "Year", "Month", "Day")`. Box 3: `.parquet("/DBTBL1")`.
+- [ ] Box 1: `.sortBy`. Box 2: `("*")`. Box 3: `.json("/DBTBL1")`.
+- [ ] Box 1: `.bucketBy`. Box 2: `("GeographyRegionID")`. Box 3: `.csv("/DBTBL1")`.
 
 ### You have an Azure Synapse Analytics dedicated SQL pool that contains the users shown in the following table. User1 executes a query on the database, and the query returns the results shown in the following exhibit. User1 is the only user who has access to the unmasked data. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
@@ -577,7 +577,7 @@
 
 ### You have an Azure Data Lake Storage Gen2 account named adls2 that is protected by a virtual network. You are designing a SQL pool in Azure Synapse that will use adls2 as a source. What should you use to authenticate to adls2?
 
-- [ ] a shared access signature (SAS).
+- [ ] a Shared Access Signature (SAS).
 - [x] a managed identity.
 - [ ] a shared key.
 - [ ] an Azure Active Directory (Azure AD) user.
@@ -803,10 +803,10 @@
 
 ![Question 125](images/question125.jpg)
 
-- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD).
+- [ ] Box 1: a Shared Access Signature (SAS). Box 2: Azure Active Directory (Azure AD).
 - [ ] Box 1: Azure Active Directory (Azure AD). Box 2: a managed identity.
 - [ ] Box 1: a shared key. Box 2: a shared key.
-- [ ] Box 1: a shared access signature (SAS). Box 2: Azure Active Directory (Azure AD).
+- [ ] Box 1: a Shared Access Signature (SAS). Box 2: Azure Active Directory (Azure AD).
 
 ### You have an Azure data solution that contains an enterprise data warehouse in Azure Synapse Analytics named DW1. Several users execute ad hoc queries to DW1 concurrently. You regularly perform automated data loads to DW1. You need to ensure that the automated data loads have enough memory available to complete quickly and successfully when the adhoc queries run. What should you do?
 
@@ -1172,9 +1172,9 @@
 
 - [x] Add the managed identity to the Sales group.
 - [ ] Use the managed identity as the credentials for the data load process.
-- [ ] Create a shared access signature (SAS).
+- [ ] Create a Shared Access Signature (SAS).
 - [x] Add your Azure Active Directory (Azure AD) account to the Sales group.
-- [ ] Use the snared access signature (SAS) as the credentials for the data load process.
+- [ ] Use the Shared Access Signature (SAS) as the credentials for the data load process.
 - [x] Create a managed identity.
 
 ### You are planning a streaming data solution that will use Azure Databricks. The solution will stream sales transaction data from an online store. The solution has the following specifications: * The output data will contain items purchased, quantity, line total sales amount, and line total tax amount. * Line total sales amount and line total tax amount will be aggregated in Databricks. * Sales transactions will never be updated. Instead, new rows will be added to adjust a sale. You need to recommend an output mode for the dataset that will be processed by using Structured Streaming. The solution must minimize duplicate data. What should you recommend?
@@ -1848,9 +1848,9 @@
 
 ### You have an Azure subscription that contains an Azure Data Lake Storage Gen2 account named account1 and an Azure Synapse Analytics workspace named workspace1. You need to create an external table in a serverless SQL pool in workspace1. The external table will reference CSV files stored in account1. The solution must maximize performance. How should you configure the external table?
 
-- [x] Use a native external table and authenticate by using a shared access signature (SAS).
+- [x] Use a native external table and authenticate by using a Shared Access Signature (SAS).
 - [ ] Use a native external table and authenticate by using a storage account key.
-- [ ] Use an Apache Hadoop external table and authenticate by using a shared access signature (SAS).
+- [ ] Use an Apache Hadoop external table and authenticate by using a Shared Access Signature (SAS).
 - [ ] Use an Apache Hadoop external table and authenticate by using a service principal in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra.
 
 ### You have an Azure Synapse Analytics serverless SQL pool that contains a database named db1. The data model for db1 is shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the exhibit.
