@@ -493,14 +493,27 @@
 - [ ] Box 1: `.sortBy`. Box 2: `("*")`. Box 3: `.json("/DBTBL1")`.
 - [ ] Box 1: `.bucketBy`. Box 2: `("GeographyRegionID")`. Box 3: `.csv("/DBTBL1")`.
 
-### You have an Azure Synapse Analytics dedicated SQL pool that contains the users shown in the following table. User1 executes a query on the database, and the query returns the results shown in the following exhibit. User1 is the only user who has access to the unmasked data. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
+### You have an Azure Synapse Analytics serverless SQL pool that contains a database named db1. The data model for db1 is shown in the following exhibit.
 
-![Question 106](images/question106.jpg)
+![Question 67 part 1](images/question67_1.png)
+![Question 67 part 2](images/question67_2.jpg)
 
-- [ ] Box 1: the values stored in the database. Box 2: a random number.
-- [ ] Box 1: a random number. Box 2: 1900-01-01.
-- [x] Box 1: 0. Box 2: the values stored in the database.
-- [ ] Box 1: 1900-01-01. Box 2: a random number.
+- [ ] To convert the data model to a star schema: join DimGeography and DimCustomer. Once the data model is converted into a star schema, there will be [...] tables: 6.
+- [ ] To convert the data model to a star schema: join DimGeography and FactOrders. Once the data model is converted into a star schema, there will be [...] tables: 5.
+- [x] To convert the data model to a star schema: join DimGeography and DimCustomer. Once the data model is converted into a star schema, there will be [...] tables: 5.
+- [ ] To convert the data model to a star schema: union DimGeography and FactOrders. Once the data model is converted into a star schema, there will be [...] tables: 6.
+
+### You have an Azure Synapse Analytics dedicated SQL pool that contains the users shown in the following table. User1 executes a query on the database, and the query returns the results shown in the following exhibit. User1 is the only user who has access to the unmasked data.
+
+![Question 68 part 1](images/question68_1.png)
+![Question 68 part 2](images/question68_2.png)
+![Question 68 part 3](images/question68_3.png)
+![Question 68 part 4](images/question68_4.jpg)
+
+- [ ] When User2 queries the `YearlyIncome` column, the values returned will be: the values stored in the database. When User1 queries the `BirthDate` column, the values returned will be: a random number.
+- [ ] When User2 queries the `YearlyIncome` column, the values returned will be: a random number. When User1 queries the `BirthDate` column, the values returned will be: 1900-01-01.
+- [x] When User2 queries the `YearlyIncome` column, the values returned will be: 0. When User1 queries the `BirthDate` column, the values returned will be: the values stored in the database.
+- [ ] When User2 queries the `YearlyIncome` column, the values returned will be: XXXX. When User1 queries the `BirthDate` column, the values returned will be: a random number.
 
 ### Which Azure Data Factory components should you recommend using together to import the daily inventory data from the SQL server to Azure Data Lake Storage?
 
@@ -1852,15 +1865,6 @@
 - [ ] Use a native external table and authenticate by using a storage account key.
 - [ ] Use an Apache Hadoop external table and authenticate by using a Shared Access Signature (SAS).
 - [ ] Use an Apache Hadoop external table and authenticate by using a service principal in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra.
-
-### You have an Azure Synapse Analytics serverless SQL pool that contains a database named db1. The data model for db1 is shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the exhibit.
-
-![Question 173](images/question173.jpg)
-
-- [ ] Box 1: 6. Box 2: join DimGeography and FactOrders.
-- [ ] Box 1: 6. Box 2: join DimGeography and DimCustomer.
-- [x] Box 1: join DimGeography and DimCustomer. Box 2: 6.
-- [ ] Box 1: 6. Box 2: join DimGeography and FactOrders.
 
 ### You have an Azure subscription that contains the resources shown in the following table. You need to read the TSV files by using ad-hoc queries and the OPENROWSET function. The solution must assign a name and override the inferred data type of each column. What should you include in the OPENROWSET function?
 
