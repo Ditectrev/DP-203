@@ -1928,14 +1928,14 @@
 - [x] CSV.
 - [ ] Avro.
 
-### You have a data warehouse. You need to implement a slowly changing dimension (SCD) named Product that will include three columns named ProductName, ProductColor, and ProductSize. The solution must meet the following requirements: Prevent changes to the values stored in ProductNameRetain only the current and the last values in ProductSize. Retain all the current and previous values in ProductColor. Which type of SCD should you implement for each column?
+### You have a data warehouse. You need to implement a slowly changing dimension (SCD) named Product that will include three columns named `ProductName`, `ProductColor`, and `ProductSize`. The solution must meet the following requirements: Prevent changes to the values stored in `ProductNameRetain` only the current and the last values in `ProductSize`. Retain all the current and previous values in `ProductColor`. Which type of SCD should you implement for each column?
 
 ![Question 250](images/question250.jpg)
 
-- [ ] Box 1: Type 0. Box 2: Type 1. Box 3: Type 2.
-- [ ] Box 1: Type 1. Box 2: Type 2. Box 3: Type 2.
-- [ ] Box 1: Type 2. Box 2: Type 0. Box 3: Type 0.
-- [ ] Box 1: Type 1. Box 2: Type 2. Box 3: Type 0.
+- [ ] `ProductName`: Type 0. `Color`: Type 1. `Size`: Type 2.
+- [ ] `ProductName`: Type 1. `Color`: Type 2. `Size`: Type 2.
+- [ ] `ProductName`: Type 2. `Color`: Type 0. `Size`: Type 0.
+- [x] `ProductName`: Type 0. `Color`: Type 2. `Size`: Type 3.
 
 ### You are incrementally loading data into fact tables in an Azure Synapse Analytics dedicated SQL pool. Each batch of incoming data is staged before being loaded into the fact tables. You need to ensure that the incoming data is staged as quickly as possible. How should you configure the staging tables?
 
