@@ -1945,3 +1945,9 @@
 - [ ] Box 1: ROUND_ROBIN. Box 2: Heap.
 - [ ] Box 1: HASH. Box 2: HASH.
 - [ ] Box 1: HASH. Box 2: ROUND_ROBIN.
+
+### You are designing an Azure Stream Analytics solution that will analyze Twitter data. You need to count the tweets in each 10-second window. The solution must ensure that each tweet is counted only once. Solution: You use a hopping window that uses a hop size of 5 seconds and a window size 10 seconds. Does this meet the goal?
+
+- [ ] Yes.
+- [x] No.
+
