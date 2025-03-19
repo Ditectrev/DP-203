@@ -517,11 +517,11 @@
 
 ### Which Azure Data Factory components should you recommend using together to import the daily inventory data from the SQL server to Azure Data Lake Storage?
 
-![Question 69](images/question69.jpg)
+![Question 69](images/image.png)
 
-- [ ] Integration runtime type: Schedule trigger. Trigger type: Copy activity. Activity type: Self-hosted integration runtime.
-- [ ] Integration runtime type: Schedule trigger. Trigger type: Self-hosted integration runtime. Activity type: Lookup activity.
-- [ ] Integration runtime type: Lookup activity. Trigger type: Lookup activity. Activity type: Copy activity.
+- [ ] Integration runtime type: Azure integration runtime. Trigger type: Tumbling window trigger. Activity type: Stored procedure activity.
+- [ ] Integration runtime type: Azure integration runtime. Trigger type: Schedule trigger. Activity type: Lookup activity.
+- [ ] Integration runtime type: Azure-SSIS integration runtime. Trigger type: Event-based trigger. Activity type: Copy activity.
 - [x] Integration runtime type: Self-hosted integration runtime. Trigger type: Schedule trigger. Activity type: Copy activity.
 
 ### You need to ensure that the Twitter feed data can be analyzed in the dedicated SQL pool. The solution must meet the customer sentiment analytics requirements. Which three Transaction-SQL DDL commands should you run in sequence?
@@ -702,10 +702,10 @@
 
 ![Question 92](images/question92.jpg)
 
-- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Partition option to Dynamic range.
-- [x] Box 1: Set the Copy method to PolyBase. Box 2: Set the Copy method to Bulk insert.
-- [ ] Box 1: Set the Copy method to Bulk insert. Box 2: Set the Copy method to PolyBase.
-- [ ] Box 1: Set the Partition option to Dynamic range. Box 2: Set the Copy method to PolyBase.
+- [ ] P1: Set the Copy method to Bulk insert. P2: Set the Partition option to Dynamic range.
+- [ ] P1: Set the Copy method to PolyBase. P2: Set the Copy method to Bulk insert.
+- [ ] P1: Set the Copy method to Bulk insert. P2: Set the Copy method to PolyBase.
+- [x] P1: Set the Partition option to Dynamic range. P2: Set the Copy method to PolyBase.
 
 ### Solution: You copy the files to a table that has a columnstore index.
 
@@ -1075,10 +1075,10 @@
 
 ![Question 139](images/question139.jpg)
 
-- [ ] Box 1: Parquet. Box 2: Parquet.
-- [x] Box 1: Preserve hierarchy. Box 2: Parquet.
-- [ ] Box 1: Parquet. Box 2: Preserve hierarchy.
-- [ ] Box 1: Preserve hierarchy. Box 2: Preserve hierarchy.
+- [ ] Copy behavior: Merge files. Sink file type: CSV.
+- [ ] Copy behavior: Preserve hierarchy. Sink file type: Parquet.
+- [x] Copy behavior: Merge files. Sink file type: Parquet.
+- [ ] Copy behavior: Preserve hierarchy. Sink file type: JSON.
 
 ### You have an Azure data factory. You need to ensure that pipeline-run data is retained for 120 days. The solution must ensure that you can query the data by using the Kusto query language. Which four actions should you perform in sequence?
 
@@ -1951,3 +1951,11 @@
 - [ ] Yes.
 - [x] No.
 
+### Which Azure service and feature should you recommend using to manage the transient data for Data Lake Storage?
+
+![Question 252](Screenshot 2025-03-19 at 11.41.03.png)
+
+- [ ] Service: Azure Data Factory. Feature: Delete Activity.
+- [x] Service: Azure Storage. Feature: Lifecycle management rule.
+- [ ] Service: Azure Synapse Analytics. Feature: `DROP EXTERNAL TABLE`.
+- [ ] Service: Azure Data Factory. Feature: Lifecycle management rule.
