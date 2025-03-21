@@ -517,7 +517,7 @@
 
 ### Which Azure Data Factory components should you recommend using together to import the daily inventory data from the SQL server to Azure Data Lake Storage?
 
-![Question 69](images/image.png)
+![Question 69](images/question69.png)
 
 - [ ] Integration runtime type: Azure integration runtime. Trigger type: Tumbling window trigger. Activity type: Stored procedure activity.
 - [ ] Integration runtime type: Azure integration runtime. Trigger type: Schedule trigger. Activity type: Lookup activity.
@@ -1953,7 +1953,7 @@
 
 ### Which Azure service and feature should you recommend using to manage the transient data for Data Lake Storage?
 
-![Question 252](Screenshot 2025-03-19 at 11.41.03.png)
+![Question 252](question252.png)
 
 - [ ] Service: Azure Data Factory. Feature: Delete Activity.
 - [x] Service: Azure Storage. Feature: Lifecycle management rule.
