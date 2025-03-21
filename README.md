@@ -498,10 +498,10 @@
 ![Question 67 part 1](images/question67_1.png)
 ![Question 67 part 2](images/question67_2.jpg)
 
-- [ ] To convert the data model to a star schema: join DimGeography and DimCustomer. Once the data model is converted into a star schema, there will be [...] tables: 6.
-- [ ] To convert the data model to a star schema: join DimGeography and FactOrders. Once the data model is converted into a star schema, there will be [...] tables: 5.
-- [x] To convert the data model to a star schema: join DimGeography and DimCustomer. Once the data model is converted into a star schema, there will be [...] tables: 5.
-- [ ] To convert the data model to a star schema: union DimGeography and FactOrders. Once the data model is converted into a star schema, there will be [...] tables: 6.
+- [ ] To convert the data model to a star schema: `join DimGeography and DimCustomer`. Once the data model is converted into a star schema, there will be [...] tables: 6.
+- [ ] To convert the data model to a star schema: `join DimGeography and FactOrders`. Once the data model is converted into a star schema, there will be [...] tables: 5.
+- [x] To convert the data model to a star schema: `join DimGeography and DimCustomer`. Once the data model is converted into a star schema, there will be [...] tables: 5.
+- [ ] To convert the data model to a star schema: `union DimGeography and FactOrders`. Once the data model is converted into a star schema, there will be [...] tables: 6.
 
 ### You have an Azure Synapse Analytics dedicated SQL pool that contains the users shown in the following table. User1 executes a query on the database, and the query returns the results shown in the following exhibit. User1 is the only user who has access to the unmasked data.
 
@@ -789,12 +789,12 @@
 
 ### You are designing an application that will use an Azure Data Lake Storage Gen 2 account to store petabytes of license plate photos from toll booths. The account will use zone-redundant storage (ZRS). You identify the following usage patterns: The data will be accessed several times a day during the first 30 days after the data is created. The data must meet an availability SU of 99.9%. After 90 days, the data will be accessed infrequently but must be available within 30 seconds. After 365 days, the data will be accessed infrequently but must be available within five minutes.
 
-![Question 104](images/question104.jpg)
+![Question 104](images/question104.png)
 
-- [ ] First 30 days: Cool. After 90 days: Hot. After 365 days: Archive.
+- [x] First 30 days: Hot. After 90 days: Cool. After 365 days: Cool.
 - [ ] First 30 days: Hot. After 90 days: Archive. After 365 days: Archive.
 - [ ] First 30 days: Cool. After 90 days: Cool. After 365 days: Archive.
-- [x] First 30 days: Cool. After 90 days: Hot. After 365 days: Archive.
+- [ ] First 30 days: Cool. After 90 days: Hot. After 365 days: Archive.
 
 ### A company has a real-time data analysis solution that is hosted on Microsoft Azure. The solution uses Azure Event Hub to ingest data and an Azure Stream Analytics cloud job to analyze the data. The cloud job is configured to use 120 Streaming Units (SU). You need to optimize performance for the Azure Stream Analytics job. Which two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.
 
@@ -818,10 +818,10 @@
 
 ![Question 107](images/question107.jpg)
 
-- [ ] Box 1: a Shared Access Signature (SAS). Box 2: Azure Active Directory (Azure AD).
-- [ ] Box 1: Azure Active Directory (Azure AD). Box 2: a managed identity.
-- [ ] Box 1: a shared key. Box 2: a shared key.
-- [ ] Box 1: a Shared Access Signature (SAS). Box 2: Azure Active Directory (Azure AD).
+- [ ] Box 1: a Shared Access Signature (SAS). Box 2: a stored access policy.
+- [x] Box 1: Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra. Box 2: a managed identity.
+- [ ] Box 1: a shared key. Box 2: an Authorization header.
+- [ ] Box 1: a Shared Access Signature (SAS). Box 2: a managed identity.
 
 ### You have an Azure data solution that contains an enterprise data warehouse in Azure Synapse Analytics named DW1. Several users execute ad hoc queries to DW1 concurrently. You regularly perform automated data loads to DW1. You need to ensure that the automated data loads have enough memory available to complete quickly and successfully when the adhoc queries run. What should you do?
 
@@ -992,10 +992,10 @@
 
 ![Question 128](images/question128.jpg)
 
-- [x] Box 1: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'. Box 2: disjoints false. Box 3: ecommerce, retail, wholesale, all.
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
-- [ ] Box 1: ecommerce, retail, wholesale, all. Box 2: disjoints false. Box 3: dept=- 'ecommerce', dept=- 'retail', dept-- "wholesale'.
+- [ ] Box 1: `dept=='ecommerce', dept=='retail', dept-- 'wholesale'`. Box 2: `disjoint: false`. Box 3: `ecommerce, retail, wholesale, all`.
+- [ ] Box 1: `ecommerce, retail, wholesale, all`. Box 2: `disjoint: false`. Box 3: `dept=='ecommerce', dept=='retail', dept-- 'wholesale'`.
+- [x] Box 1: `dept=='ecommerce', dept=='retail', dept-- 'wholesale'`. Box 2: `disjoint: true`. Box 3: `ecommerce, retail, wholesale, all`.
+- [ ] Box 1: `dept=='ecommerce', dept=='wholesale', dept-- 'retail'`. Box 2: `disjoint: true`. Box 3: `ecommerce, retail, wholesale, all`.
 
 ### You have a data model that you plan to implement in a data warehouse in Azure Synapse Analytics as shown in the following exhibit. All the dimension tables will be less than 2 GB after compression, and the fact table will be approximately 6 TB. Which type of table should you use for each table?
 
@@ -1478,23 +1478,23 @@
 - [ ] Create an external table mat contains a subset of columns from the Parquet files.
 - [x] Use Snappy compression for the files.
 
-### You have an Azure Data Factory pipeline that contains a data flow. The data flow contains the following expression.
+### You have an Azure Data Factory pipeline that contains a data flow. The data flow contains the following expression.... UNCOMPLETED QUESTION, PLEASE REPORT IF YOU FIND THE FULL QUESTION.
 
 ![Question 192](images/question192.jpg)
 
-- [ ] Box 1: 4. Box 2: 4.
-- [ ] Box 1: 22. Box 2: 22.
-- [x] Box 1: 22. Box 2: 4.
-- [ ] Box 1: 10. Box 2: 3.
+- [ ] Number of columns: 4. Number of rows: 4.
+- [ ] Number of columns: 22. Number of rows: 22.
+- [x] Number of columns: 22. Number of rows: 4.
+- [ ] Number of columns: 10. Number of rows: 3.
 
 ### You have an Azure Synapse Analytics pipeline named Pipeline1 that contains a data flow activity named Dataflow1. Pipeline1 retrieves files from an Azure Data Lake Storage Gen 2 account named storage1. Dataflow1 uses the AutoResolveIntegrationRuntime integration runtime configured with a core count of 128. You need to optimize the number of cores used by Dataflow1 to accommodate the size of the files in storage1. What should you configure?
 
 ![Question 193](images/question193.jpg)
 
-- [x] Box 1: A Get Metadata activity. Box 2: Dynamic content.
-- [ ] Box 1: A Get Metadata activity. Box 2: A Get Metadata activity.
-- [ ] Box 1: Dynamic content. Box 2: Parameters.
-- [ ] Box 1: Parameters. Box 2: A Get Metadata activity.
+- [x] To Pipeline1, add: Get Metadata activity. Box 2: Dynamic content.
+- [ ] To Pipeline1, add: Get Metadata activity. Box 2: Parameters.
+- [ ] To Pipeline1, add: If Condition activity. Box 2: Parameters.
+- [ ] To Pipeline1, add: custom activity. Box 2: User properties.
 
 ### You have an enterprise data warehouse in Azure Synapse Analytics. Using PolyBase, you create an external table named [Ext].[Items] to query Parquet files stored in Azure Data Lake Storage Gen2 without importing the data to the data warehouse. The external table has three columns.You discover that the Parquet files have a fourth column named ItemID. Which command should you run to add the ItemID column to the external table?
 
@@ -1668,8 +1668,8 @@
 
 ### Solution: You use an Azure Data Factory schedule trigger to execute a pipeline that executes an Azure Databricks notebook, and then inserts the data into the data warehouse. Dow this meet the goal?
 
-- [x] Yes
-- [ ] No
+- [x] Yes.
+- [ ] No.
 
 ### You have a SQL pool in Azure Synapse. You discover that some queries fail or take a long time to complete. You need to monitor for transactions that have rolled back. Which dynamic management view should you query?
 
@@ -1791,10 +1791,10 @@
 
 ### You have an Azure Data Lake Storage Gen2 container that contains 100 TB of data. You need to ensure that the data in the container is available for read workloads in a secondary region if an outage occurs in the primary region. The solution must minimize costs. Which type of data redundancy should you use?
 
-- [ ] zone-redundant storage (ZRS).
-- [ ] read-access geo-redundant storage (RA-GRS).
-- [ ] locally-redundant storage (LRS).
-- [x] geo-redundant storage (GRS).
+- [ ] Zone-redundant storage (ZRS).
+- [x] Read-access geo-redundant storage (RA-GRS).
+- [ ] Locally-redundant storage (LRS).
+- [ ] Geo-redundant storage (GRS).
 
 ### You have several Azure Data Factory pipelines that contain a mix of the following types of activities. * Wrangling data flow * Notebook * Copy * jar Which two Azure services should you use to debug the activities? Each correct answer presents part of the solution NOTE: Each correct selection is worth one point.
 
@@ -1915,10 +1915,10 @@
 
 ![Question 248](images/question248.jpg)
 
-- [ ] Box 1: OPENROWSET. Box 2: BULK.
-- [ ] Box 1: BULK. Box 2: DATA_SOURCE.
-- [ ] Box 1: BULK. Box 2: DATA_SOURCE.
-- [ ] Box 1: DATA_SOURCE. Box 2: BULK.
+- [x] Box 1: `OPENROWSET`. Box 2: `BULK`.
+- [ ] Box 1: `BULK`. Box 2: `DATA_SOURCE`.
+- [ ] Box 1: `BULK`. Box 2: `DATA_SOURCE`.
+- [ ] Box 1: `DATA_SOURCE`. Box 2: `BULK`.
 
 ### You have an Azure Data Lake Storage Gen2 account named storage1. You plan to implement query acceleration for storage1. Which two file types support query acceleration? Each correct answer presents a complete solution.
 
@@ -1959,3 +1959,24 @@
 - [x] Service: Azure Storage. Feature: Lifecycle management rule.
 - [ ] Service: Azure Synapse Analytics. Feature: `DROP EXTERNAL TABLE`.
 - [ ] Service: Azure Data Factory. Feature: Lifecycle management rule.
+
+### You have an Azure data factory named adf1 that contains a pipeline named ExecProduct. ExecProduct contains a data flow named Product. The Product data flow contains the following transformations: `WeeklyData`: A source that points to a CSV file in an Azure Data Lake Storage Gen2 account with 20 columns. `ProductColumns`: A select transformation that selects from `WeeklyData` six columns named `ProductID`, `ProductDescr`, `ProductSubCategory`, `ProductCategory`, `ProductStatus`, and `ProductLastUpdated`. `ProductRows`: An aggregate transformation. `ProductList`: A sink that outputs data to an Azure Synapse Analytics dedicated SQL pool. The Aggregate settings for ProductRows are configured as shown in the following exhibit. There will be six columns in the output of `ProductRows`.
+
+- [x] Yes.
+- [ ] No.
+
+![Question 253](images/question253_254_255.png)
+
+### You have an Azure data factory named adf1 that contains a pipeline named ExecProduct. ExecProduct contains a data flow named Product. The Product data flow contains the following transformations: `WeeklyData`: A source that points to a CSV file in an Azure Data Lake Storage Gen2 account with 20 columns. `ProductColumns`: A select transformation that selects from `WeeklyData` six columns named `ProductID`, `ProductDescr`, `ProductSubCategory`, `ProductCategory`, `ProductStatus`, and `ProductLastUpdated`. `ProductRows`: An aggregate transformation. `ProductList`: A sink that outputs data to an Azure Synapse Analytics dedicated SQL pool. The Aggregate settings for ProductRows are configured as shown in the following exhibit. There will always be one output row for each unique value of `ProductDescr`.
+
+![Question 254](images/question253_254_255.png)
+
+- [ ] Yes.
+- [x] No.
+
+### You have an Azure data factory named adf1 that contains a pipeline named ExecProduct. ExecProduct contains a data flow named Product. The Product data flow contains the following transformations: `WeeklyData`: A source that points to a CSV file in an Azure Data Lake Storage Gen2 account with 20 columns. `ProductColumns`: A select transformation that selects from `WeeklyData` six columns named `ProductID`, `ProductDescr`, `ProductSubCategory`, `ProductCategory`, `ProductStatus`, and `ProductLastUpdated`. `ProductRows`: An aggregate transformation. `ProductList`: A sink that outputs data to an Azure Synapse Analytics dedicated SQL pool. The Aggregate settings for ProductRows are configured as shown in the following exhibit. There will always be one output row for each unique value of `ProductID`.
+
+![Question 255](images/question253_254_255.png)
+
+- [x] Yes.
+- [ ] No.
