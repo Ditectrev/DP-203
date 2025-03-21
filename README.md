@@ -667,12 +667,12 @@
 
 ### You are designing an Azure Data Lake Storage Gen2 container to store data for the human resources (HR) department and the operations department at your company. You have the following data access requirements: After initial processing, the HR department data will be retained for seven years. The operations department data will be accessed frequently for the first six months, and then accessed once per month. You need to design a data retention solution to meet the access requirements. The solution must minimize storage costs.
 
-![Question 88](images/question88.jpg)
+![Question 88](images/question88.png)
 
-- [x] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Cool storage after 180 days.
-- [ ] Box 1: Cool storage after 180 days. Box 2: Archive storage after one day and delete storage after 2,555 days.
-- [ ] Box 1: Archive storage after one day and delete storage after 2,555 days. Box 2: Archive storage after one day and delete storage after 2,555 days.
-- [ ] Box 1: Cool storage after 180 days. Box 2: Cool storage after 180 days.
+- [x] HR: Archive storage after one day and delete storage after 2,555 days. Operations: Cool storage after 180 days.
+- [ ] HR: Cool storage after 180 days. Operations: Archive storage after one day and delete storage after 2,555 days.
+- [ ] HR: Archive storage after one day and delete storage after 2,555 days. Operations: Archive storage after one day and delete storage after 2,555 days.
+- [ ] HR: Cool storage after 180 days. Operations: Cool storage after 180 days.
 
 ### You are designing an application that will store petabytes of medical imaging data When the data is first created, the data will be accessed frequently during the first week. After one month, the data must be accessible within 30 seconds, but files will be accessed infrequently. After one year, the data will be accessed infrequently but must be accessible within five minutes. You need to select a storage strategy for the data. The solution must minimize costs. Which storage tier should you use for each time frame?
 
