@@ -79,18 +79,21 @@
 - [ ] Set the distribution column to the sales date.
 - [x] Set the distribution column to product ID.
 
-### You need to implement an Azure Synapse Analytics database object for storing the sales transactions data. The solution must meet the sales transaction dataset requirements. What should you do? Transact-SQL DDL command to use:
+### You need to implement an Azure Synapse Analytics database object for storing the sales transactions data. The solution must meet the sales transaction dataset requirements. What should you do?
 
-- [ ] `CREATE EXTERNAL TABLE`.
-- [x] `CREATE TABLE`.
-- [ ] `CREATE VIEW`.
+![Question 14](images/question14.jpg)
 
-### You need to implement an Azure Synapse Analytics database object for storing the sales transactions data. The solution must meet the sales transaction dataset requirements. What should you do? Partitioning option to use in the `WITH` clause of the DDL statement:
+- [ ] Transact-SQL DDL command to use: `CREATE EXTERNAL TABLE`. Partitioning option to use in the `WITH` clause of the DDL statement: `FORMAT_TYPE`.
+- [x] Transact-SQL DDL command to use: `CREATE TABLE`. Partitioning option to use in the `WITH` clause of the DDL statement: `RANGE RIGHT FOR VALUES`.
+- [ ] Transact-SQL DDL command to use: `CREATE TABLE`. Partitioning option to use in the `WITH` clause of the DDL statement: `RANGE LEFT FOR VALUES`.
+- [ ] Transact-SQL DDL command to use: `CREATE VIEW`. Partitioning option to use in the `WITH` clause of the DDL statement: `RANGE LEFT FOR VALUES`.
 
-- [ ] `FORMAT_OPTIONS`.
-- [ ] `FORMAT_TYPE`.
-- [ ] `RANGE LEFT FOR VALUES`.
-- [x] `RANGE RIGHT FOR VALUES`.
+### PLACEHOLDER
+
+- [ ] ...
+- [ ] ...
+- [ ] ...
+- [ ] ...
 
 ### You have an Azure Synapse Analytics dedicated SQL pool that contains a table named Table1. You have files that are ingested and loaded into an Azure Data Lake Storage Gen2 container named container1. You plan to insert data from the files in container1 into Table1 and transform the data. Each row of data in the files will produce one row in the serving layer of Table1. You need to ensure that when the source data files are loaded to container1, the DateTime is stored as an additional column in Table1. Solution: You use a dedicated SQL pool to create an external table that has an additional `DateTime` column. Does this meet the goal?
 
@@ -264,12 +267,13 @@
 
 ### You have the following table named Employees. You need to calculate the employee_type value based on the hire_date value. How should you complete the Transact-SQL statement?
 
-![Question 38](images/question38.jpg)
+![Question 38 part 1](images/question38_1.png)
+![Question 38 part 2](images/question38_2.jpg)
 
-- [ ] Box 1: ELSE. Box 2: CASE.
-- [ ] Box 1: CASE. Box 2: OVER.
-- [ ] Box 1: ELSE. Box 2: OVER.
-- [x] Box 1: CASE. Box 2: ELSE.
+- [ ] Box 1: `ELSE`. Box 2: `CASE`.
+- [ ] Box 1: `CASE`. Box 2: `OVER`.
+- [ ] Box 1: `ELSE`. Box 2: `OVER`.
+- [x] Box 1: `CASE`. Box 2: `ELSE`.
 
 ### You are building an Azure Stream Analytics job to retrieve game data. You need to ensure that the job returns the highest scoring record for each five-minute time interval of each game. How should you complete the Stream Analytics query?
 
@@ -528,10 +532,10 @@
 
 ![Question 70](images/question70.png)
 
-- [ ] Box 1: CREATE EXTERNAL DATA SOURCE. box 2: CREATE EXTERNAL TABLE AS SELECT. Box 3: CREATE EXTERNAL FILE FORMAT.
-- [x] Box 1: CREATE EXTERNAL DATA SOURCE. box 2: CREATE EXTERNAL FILE FORMAT. Box 3: CREATE EXTERNAL TABLE AS SELECT.
-- [ ] Box 1: CREATE EXTERNAL TABLE AS SELECT. box 2: CREATE EXTERNAL DATA SOURCE. Box 3: CREATE EXTERNAL FILE FORMAT.
-- [ ] Box 1: CREATE EXTERNAL FILE FORMAT. box 2: CREATE EXTERNAL TABLE AS SELECT. Box 3: CREATE EXTERNAL DATA SOURCE.
+- [ ] Box 1: `CREATE EXTERNAL DATA SOURCE`. Box 2: `CREATE EXTERNAL TABLE AS SELECT`. Box 3: `CREATE EXTERNAL FILE FORMAT`.
+- [ ] Box 1: `CREATE EXTERNAL DATA SOURCE`. Box 2: `CREATE EXTERNAL FILE FORMAT`. Box 3: `CREATE EXTERNAL TABLE AS SELECT`.
+- [x] Box 1: `CREATE EXTERNAL DATA SOURCE`. Box 2: `CREATE EXTERNAL FILE FORMAT`. Box 3: `CREATE TABLE`.
+- [ ] Box 1: `CREATE DATABASE SCOPED CREDENTIAL`. Box 2: `CREATE EXTERNAL DATA SOURCE`. Box 3: `CREATE EXTERNAL FILE FORMAT`.
 
 ### You are designing a dimension table for a data warehouse. The table will track the value of the dimension attributes over time and preserve the history of the data by adding new rows as the data changes. Which type of slowly changing dimension (SCD) should use?
 
