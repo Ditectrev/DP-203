@@ -912,7 +912,7 @@
 ![Question 118](images/question118.jpg)
 
 - [x] Data storage: Azure Data Lake Store. Batch processing: HDinsight Spark. Analytical data store: Azure SOL Data Warehouse.
-- [ ] Data storage: HDinsight Spark. Batch processing: Azure SOL Data Warehouse.Analytical data store: Azure SOL Data Warehouse.
+- [ ] Data storage: HDinsight Spark. Batch processing: Azure SOL Data Warehouse. Analytical data store: Azure SOL Data Warehouse.
 - [ ] Data storage: HDinsight Spark. Batch processing: Azure Data Lake Store. Analytical data store: Azure Data Lake Store.
 - [ ] Data storage: Azure Data Lake Store.Batch processing: Azure SOL Data Warehouse. Analytical data store: HDinsight Spark.
 
@@ -921,7 +921,7 @@
 ![Question 119](images/question119.jpg)
 
 - [ ] Ingest: Azure Databricks: Azure Data Factory. Preapare and Train: Azure Data Factory. Model and Serve: Azure Data Lake Storage.
-- [ ]Ingest: Azure Data Lake Storage. Store: Azure Data Lake Storage.Preapare and Train: Azure Snapse Analvtics.Model and Serve: Azure Databricks.
+- [ ] Ingest: Azure Data Lake Storage. Store: Azure Data Lake Storage.Preapare and Train: Azure Snapse Analvtics.Model and Serve: Azure Databricks.
 - [x] Ingest: Azure Data Factory.  Store: Azure Data Lake Storage. Preapare and Train: Azure Databricks.Model and Serve: Azure Snapse Analvtics.
 - [ ] Ingest: Azure Data Factory.  Store: Azure Snapse Analvtics. Preapare and Train: Azure Databricks. Model and Serve: Azure Snapse Analvtics.
 
